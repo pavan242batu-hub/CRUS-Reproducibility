@@ -1,6 +1,36 @@
 # CRUS-Reproducibility
 Implementation and reproducibility materials for clinical section routing. 
 # CRUS reproducibility materials
+## Current revision package — 30 October 2026
+
+The current revision package is:
+
+[Download the revised package](crus_review_revised_20261030T090211792719Z.zip)
+
+[Download its SHA-256 checksum](crus_review_revised_20261030T090211792719Z.zip.sha256)
+
+SHA-256:
+
+    c23e1e01e48783723c191b5cfac0b0401209252fc518d4f56bc9140cf809391c
+
+This archive supersedes the earlier package for the current revision.
+Earlier archives are retained as historical snapshots.
+
+After extraction, begin with the package README and:
+
+    revision_updates/REVISION_UPDATE_GUIDE.md
+
+The package includes the final-cohort Table 13 analysis, the
+operating-point/risk–coverage audit, their scripts and outputs,
+and updated implementation-notebook and reviewer documentation.
+
+Archive integrity was checked during packaging. This does not
+establish independent end-to-end reproduction, privacy clearance,
+or redistribution permission.
+
+The repository remains private while sharing review is pending.
+
+
 
 ## Status
 
