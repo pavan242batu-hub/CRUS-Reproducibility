@@ -34,12 +34,15 @@ The repository remains private while sharing review is pending.
 
 ## Status
 
-Private development repository containing a draft reproducibility
-package for editorial review preparation.
+This repository is publicly accessible and contains CRUS implementation
+and reproducibility materials.
 
-Manual sharing review remains pending. This repository does not
-currently represent a fully verified end-to-end inference release.
+The final revision package is being prepared for archival deposit in
+Zenodo. A published deposit DOI is not yet available.
 
+Manual sharing review of the final revision package remains pending.
+Public availability does not establish a fully verified
+clean-environment, end-to-end inference release.
 ## Package
 
 The uploaded ZIP contains:
