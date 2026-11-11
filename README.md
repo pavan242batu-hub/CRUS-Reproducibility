@@ -1,203 +1,266 @@
-# CRUS implementation and reproducibility materials
+# CRUS clinical section-routing reproducibility materials
 
-Implementation and reproducibility materials for clinical section routing.
+## Current major-revision additions
 
-## Status and access
+The `revision_updates/` directory contains the final-cohort Table 13
+regeneration and operating-point/risk-coverage verification added
+for the current major revision.
 
-This repository is publicly accessible and contains CRUS implementation
-and reproducibility materials.
+Begin with `revision_updates/REVISION_UPDATE_GUIDE.md` for the
+changes, reported verification results, script locations, and
+verification scope.
 
-The final revision package is being prepared for archival deposit in
-Zenodo under reserved DOI:
+Historical analyses elsewhere in this package must not be substituted
+for the corrected results identified in that guide.
 
-    10.5281/zenodo.24084026
+## Code and materials availability
 
-The Zenodo record is currently an unpublished draft. DOI reservation
-does not establish publication or public access to the final archive.
+The CRUS final-revision implementation and reproducibility materials
+are associated with Zenodo DOI **10.5281/zenodo.24084026**.
 
-Manual sharing review of the final revision package remains pending.
-Public availability does not establish privacy clearance,
-redistribution permission, or a fully verified clean-environment,
-end-to-end inference release.
+Zenodo record:
+[10.5281/zenodo.24084026](https://doi.org/10.5281/zenodo.24084026)
 
-## Existing revision snapshot — 30 October 2026
+Project repository:
+[CRUS-Reproducibility](https://github.com/pavan242batu-hub/CRUS-Reproducibility)
 
-The existing downloadable revision snapshot is:
+The downloadable GitHub snapshot dated 30 October 2026 does not
+contain the subsequent notebook and documentation updates included
+in this package.
 
-[Download the 30 October revision package](crus_review_revised_20261030T090211792719Z.zip)
+On 2026-11-11, the uploader reported no identifying or confidential-content
+concerns in the four reviewed risk–coverage figure files and confirmed:
+"Sharing permissions reviewed—no unresolved restrictions."
 
-[Download its SHA-256 checksum](crus_review_revised_20261030T090211792719Z.zip.sha256)
+The sharing-review record and its limited scope are documented in
+`manifest/sharing_review.json`. Scientific verification checks and
+their limitations are documented separately in `RELEASE_REVIEW.md`.
 
-Recorded SHA-256:
+This is an author/uploader review record, not institutional privacy
+certification, an exhaustive automated disclosure audit, or verification
+of all third-party rights by an independent party.
 
-    c23e1e01e48783723c191b5cfac0b0401209252fc518d4f56bc9140cf809391c
+The package contains implementation notebooks, recorded configurations
+and thresholds, split identifiers and group assignments, cleaning/grouping
+audits, case-level predictions and acceptance decisions, and
+metric-regeneration scripts.
 
-This archive superseded the earlier package at the time it was uploaded.
-Earlier archives are retained as historical snapshots.
+Specified saved-prediction scripts and limited notebook setup/workspace
+helpers were tested as documented. Full clean-environment, end-to-end
+training/inference reproduction has not been established.
 
-The 30 October archive does not include the subsequent local
-release-preparation edits being prepared for the Zenodo deposit.
-It must not be treated as the forthcoming final Zenodo archive.
+Historical status reports under `manifest/` describe earlier package
+states and are retained unchanged as provenance. They do not define
+the current package's release status.
 
-After extracting this snapshot, begin with its README.md and:
+## Start here
 
-    revision_updates/REVISION_UPDATE_GUIDE.md
+1. `REVIEWER_GUIDE.md`
+2. `REPRODUCING_RESULTS.md`
+3. `DATA_RECONSTRUCTION.md`
 
-The snapshot includes the final-cohort Table 13 analysis, the
-operating-point/risk–coverage audit, their scripts and outputs,
-and implementation-notebook and reviewer documentation.
+Additional documentation:
 
-The recorded checksum identifies this specific archive. It does not
-establish scientific validity, privacy clearance, redistribution
-permission, or successful end-to-end execution.
+- `ADDITIONAL_ARTIFACTS.md`
+- `MEDCPT_ARTIFACTS.md`
+- `environment/README.md`
 
-## Final revision package being prepared for Zenodo
+## Regenerate specified metrics from saved predictions
 
-The package being prepared includes:
+From the repository root, using the Python interpreter from your
+analysis environment, run each command separately:
 
-- Implementation notebooks with saved code-cell outputs cleared.
-- Recorded configurations and frozen thresholds and policies.
-- Primary and repeated-split identifiers and group assignments.
-- Cleaning and grouping audits.
-- Case-level predictions and acceptance decisions.
-- Supporting additional-analysis and MedCPT artifacts.
-- Scripts for regenerating specified metrics from saved predictions.
-- Dataset-access and record-reconstruction instructions.
-- Environment records.
-- Artifact inventories, export logs, and checksums.
-- A release-preparation review record describing completed checks
-  and their limitations.
+    python scripts/regenerate_primary_metrics.py --package-root .
+    python scripts/verify_matched_rankings.py --package-root .
 
-Final archive contents, inventories, and checksums will be finalized
-before publication.
+These commands do not run model inference.
 
-## Documentation and reproduction scope
+The primary scripts use Python, NumPy, pandas, and scikit-learn.
+The revision scripts additionally use SciPy and Matplotlib.
+Recorded environment versions are documented under `environment/`.
 
-Within the package, begin with:
+On 2026-11-09, packages were installed in the local Windows
+`crus-metrics-env` environment, `pip check` reported no broken
+requirements, and all four standalone saved-prediction regeneration
+and verification scripts completed successfully.
 
-1. README.md
-2. REVIEWER_GUIDE.md
-3. REPRODUCING_RESULTS.md
-4. DATA_RECONSTRUCTION.md
-5. revision_updates/REVISION_UPDATE_GUIDE.md
+See `REPRODUCING_RESULTS.md` for the verification record and scope,
+and `revision_updates/REVISION_UPDATE_GUIDE.md` for revision commands.
 
-The final deposit candidate additionally includes RELEASE_REVIEW.md,
-which records the scope and limitations of the current
-release-preparation checks.
+These checks do not establish a complete dependency lockfile or
+clean-environment, end-to-end model inference reproduction.
 
-The metric-regeneration scripts operate on supplied saved predictions
-and analysis artifacts. They do not perform fresh model inference.
+## Verification scope
 
-The matched-ranking regeneration script reconstructed 45 method/target
-rows across 11 compared count/metric fields, with zero mismatches
-within the documented tolerance.
+The primary regeneration script checked saved correctness flags and
+reconstructed full-coverage and native-acceptance metrics.
 
-Other checks and their limitations are described in the package
-documentation. Not all supplied summaries, figures, or additional
-analyses have been independently regenerated.
+The matched-ranking script independently reconstructed selections
+from saved ranking scores for 45 method/target combinations.
 
-The package must not be described as fully independently reproduced.
-A complete clean-environment, end-to-end model-inference reproduction
-has not been established.
+Eleven count/metric fields agreed with the saved verified summary:
+integer counts exactly, and floating-point fields within absolute
+tolerance 1e-10.
+
+Other supplied summaries and figures are not all independently
+regenerated by these two scripts.
 
 ## Implementation notebooks
 
-The package includes:
+The revision package contains two prepared implementation notebooks:
 
-- notebooks/CRUS_R1_5_External_Transfer.ipynb
-- notebooks/revised_risk_aware_hybrid_pipeline_v2.ipynb
+- `notebooks/CRUS_R1_5_External_Transfer.ipynb`
+- `notebooks/revised_risk_aware_hybrid_pipeline_v2.ipynb`
 
-These are historical implementation notebooks containing multiple
-experiments, audits, intermediate working cells, and machine-specific
-paths. Their inclusion does not establish a tested Run all workflow.
+Both notebooks were prepared on 2026-11-11. Read their specific guides:
 
-Notebook Markdown and intermediate cells may describe historical
-development results and release-preparation tasks. They must not be
-substituted for the authoritative final-revision results or current
-release status identified in the package documentation.
+- `notebooks/EXTERNAL_TRANSFER_RELEASE_GUIDE.md`
+- `notebooks/PIPELINE_RELEASE_GUIDE.md`
 
-## Dataset access and omitted inputs
+Preparation corrected known syntax defects, configured package/raw-input
+and new-output locations, replaced later Colab filesystem/service
+dependencies with local alternatives, and separated deposited artifacts
+from new audit working copies. Cell counts, identifiers, and ordering were
+preserved. The complete guarded external prediction function was retained.
 
-Raw MTS-Dialog dialogue inputs are not included in the distributed
-package.
+Checks included notebook structure, IPython-aware syntax, documented source
+comparisons, and limited execution of path-setup/workspace helpers.
+Working-copy and archived-original hashes were verified for 260 artifact
+files. The current notebook-preparation record is:
+`manifest/notebook_preparation_validation.json`.
 
-Obtain the dataset from its original repository:
+These checks do not establish fresh-environment, end-to-end training,
+external inference, every supplementary experiment, or full top-to-bottom
+notebook execution. Remaining saved outputs are historical and were not
+regenerated during notebook preparation.
 
-https://github.com/abachaa/MTS-Dialog
+The notebooks retain multiple historical experiments, audits, and packaging
+sections. Do not use Run all indiscriminately. Historical Markdown,
+preliminary results, configuration values, and staging messages are not the
+authoritative final-revision results or current publication status.
 
-The recorded source commit is:
+Use `revision_updates/REVISION_UPDATE_GUIDE.md` for corrected revision results,
+the deposited protocol/policy files for frozen settings, and
+`REPRODUCING_RESULTS.md` for specified saved-prediction regeneration commands.
+Raw-input acquisition is documented in `DATA_RECONSTRUCTION.md`.
 
-    3ff0801933608d6f570468c13125125fb5cabdea
+## Data and identifiers
 
-Use DATA_RECONSTRUCTION.md and the supplied provenance files for
-source-file locations, recorded checksums, row-index conventions,
-normalization and hashing, and authoritative split and group
-assignments.
+Raw dialogue inputs are not distributed in this package selection.
 
-Do not substitute fresh random splits or assume that the current
-dataset repository version is identical to the recorded source version.
+`DATA_RECONSTRUCTION.md` documents the recorded source commit,
+source-file mapping, row-index conventions, normalization, hashing,
+and authoritative split assignments.
 
-Raw inputs are omitted to avoid duplicating the source dataset in
-this code-and-derived-artifact deposit. Their omission is not a claim
-that the dataset licence prohibits redistribution.
+Text-excluded CSV derivatives retain distinct filenames. Export logs
+document the removed columns and source/output hashes.
 
-Dataset attribution:
+## Additional analyses
 
-Ben Abacha, A., Yim, W.-w., Fan, Y., and Lin, T. (2023).
-An Empirical Study of Clinical Note Generation from Doctor-Patient
-Encounters. Proceedings of the 17th Conference of the European
-Chapter of the Association for Computational Linguistics,
-pp. 2291–2302.
-DOI: 10.18653/v1/2023.eacl-main.168
+The package includes selected artifacts for the additional-MTS,
+uncertainty, weight-sensitivity, retrieval-audit, sensitivity,
+perturbation, calibration, class-deferral, candidate-selection,
+and MedCPT analyses.
 
-The source repository identifies MTS-Dialog as licensed under
-Creative Commons Attribution 4.0 International (CC BY 4.0).
+Inclusion does not establish independent numerical regeneration.
 
-Source licence at the recorded commit:
+Consult saved scope and limitation fields. In particular, additional-MTS
+evaluation is not automatically independent cross-dataset validation.
 
-https://github.com/abachaa/MTS-Dialog/blob/3ff0801933608d6f570468c13125125fb5cabdea/LICENSE.txt
+## Environment limitations
 
-Consult the dataset's own licence and attribution requirements before
-using or redistributing it.
+The primary protocol records eight package versions. Six recorded
+versions match for each repeated run. Repeated-run retrieval metadata
+do not record pandas or scipy versions.
+
+The recorded candidate requirements list is not a tested lockfile.
+Baseline-specific environment records apply to that baseline.
 
 ## Code licence and third-party materials
 
 The original implementation code owned by Pavankumar Dattatray
-Paikrao is released under the MIT License, as documented in the
-package's LICENSE file.
+Paikrao is released under the MIT License; see `LICENSE`.
 
 This licence does not relicense third-party datasets, software,
 model weights, or third-party code incorporated in or referenced
-by the notebooks and scripts.
+by the notebooks and scripts. Those materials remain subject to
+their respective licences and attribution requirements.
+Any existing third-party copyright and licence notices must
+be retained.
 
-Those materials remain subject to their respective licences and
-attribution requirements. Existing third-party copyright and
-licence notices must be retained.
+Raw MTS-Dialog dialogue inputs are not included in this package.
+Obtain them from the original dataset repository:
+
+[MTS-Dialog](https://github.com/abachaa/MTS-Dialog)
+
+Dataset attribution:
+
+Ben Abacha, A., Yim, W.-w., Fan, Y., and Lin, T. (2023).
+An Empirical Study of Clinical Note Generation from
+Doctor-Patient Encounters. Proceedings of the 17th Conference
+of the European Chapter of the Association for Computational
+Linguistics, pp. 2291–2302.
+DOI: 10.18653/v1/2023.eacl-main.168
+
+The source repository identifies MTS-Dialog as licensed under
+Creative Commons Attribution 4.0 International (CC BY 4.0):
+
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+This dataset licence is separate from the MIT licence applying
+to the original implementation code in this package.
+
+Source licence at the recorded repository commit:
+
+[MTS-Dialog source licence](https://github.com/abachaa/MTS-Dialog/blob/3ff0801933608d6f570468c13125125fb5cabdea/LICENSE.txt)
+
+See `DATA_RECONSTRUCTION.md` for the recorded source version,
+provenance files, source-row mappings, normalization, and supplied
+split and group assignments. Consult the dataset's own licence
+and attribution requirements before using or redistributing it.
+
+The omission of raw dialogue inputs from this deposit is not a
+claim that the dataset's licence prohibits redistribution.
 
 ## Integrity and provenance
 
-For the final revision package, use its package-root files:
+For this revision, use the package-root files:
 
-- REVISION_FILE_INVENTORY.csv
-- REVISION_SHA256SUMS.txt
+- `REVISION_FILE_INVENTORY.csv`
+- `REVISION_SHA256SUMS.txt`
 
-These files will be refreshed after the final package edits.
+The inventory lists the selected release files, excluding itself
+and the revision checksum list. The revision checksum list covers
+those selected files and the inventory, excluding itself.
 
-Historical inventories, status reports, export logs, and checksums
-under manifest/ are retained as provenance. Their coverage may
-predate later revision additions and release-preparation edits.
+After any subsequent change to the selected release files, refresh
+the inventory and checksum list and rebuild the distribution archive.
 
-A checksum applies only to the exact file for which it was generated.
-The checksum of an earlier archive must not be used to verify the
-forthcoming Zenodo archive.
+The `manifest/` directory retains historical inventories, export logs,
+validation reports, and checksums. Their coverage may predate the
+current revision additions and local verification outputs.
 
-## Remaining publication steps
+Historical checksum references may refer to excluded original files
+rather than text-excluded derivatives.
 
-- Resolve the remaining manual sharing and distribution review.
-- Finalize package documentation and release identification.
-- Refresh the final inventory and checksums.
-- Create and inspect the final archive.
-- Upload and publish the final Zenodo deposit.
-- Test public access to the published record and files.
-- Update this README and the manuscript's Data and Code Availability
-  section to reflect the actual published deposit.
+Checksums identify file contents; they do not establish scientific
+validity, privacy compliance, or execution success.
+
+## Distribution checklist
+
+For each distribution or subsequent update:
+
+- Review any changed code, Markdown, JSON values, attachments,
+  and artifact contents.
+- Confirm applicable data-sharing and software-distribution terms.
+- Confirm that `LICENSE` and the documented code-licence scope match
+  the intended release and that third-party notices are retained.
+- Record the release version and corresponding Git commit or tag,
+  where applicable.
+- Test the editor/reviewer access route.
+- Refresh inventories and checksums after final changes and rebuild
+  the distribution archive.
+
+The verification documented for this package is limited to the
+checks described above and in the accompanying release guides.
+It does not establish full independent end-to-end reproduction.
