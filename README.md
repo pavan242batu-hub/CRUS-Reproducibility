@@ -40,7 +40,7 @@ This is an author/uploader review record, not institutional privacy
 certification, an exhaustive automated disclosure audit, or verification
 of all third-party rights by an independent party.
 
-The package contains implementation notebooks, recorded configurations
+The package contains implementation notebooks, frozen configurations
 and thresholds, split identifiers and group assignments, cleaning/grouping
 audits, case-level predictions and acceptance decisions, and
 metric-regeneration scripts.
