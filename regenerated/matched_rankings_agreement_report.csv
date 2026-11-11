@@ -1,0 +1,12 @@
+metric,rows_compared,mismatched_rows,max_absolute_difference
+N,45,0,0.0
+n_accepted,45,0,0.0
+n_correct_accepted,45,0,0.0
+n_errors_accepted,45,0,0.0
+n_abstained,45,0,0.0
+coverage,45,0,5.551115123125783e-17
+selective_accuracy,45,0,1.1102230246251565e-16
+accepted_misclassification_rate,45,0,9.367506770274758e-17
+forced_accuracy,45,0,5.551115123125783e-17
+abstention_penalized_accuracy,45,0,5.551115123125783e-17
+abstention_penalized_error,45,0,1.1102230246251565e-16

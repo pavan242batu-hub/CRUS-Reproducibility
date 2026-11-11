@@ -1,0 +1,62 @@
+{
+  "analysis": "Primary Cascade CRUS by forced-prediction correctness",
+  "n_test": 257,
+  "n_correct": 181,
+  "n_incorrect": 76,
+  "mean_correct": 0.1031033131398504,
+  "mean_incorrect": 0.22704349662436626,
+  "difference_direction": "incorrect minus correct",
+  "mean_difference": 0.12394018348451587,
+  "mean_difference_95_ci": [
+    0.10099926008447667,
+    0.1462303128992902
+  ],
+  "bootstrap": {
+    "unit": "assigned test group_id",
+    "group_sampling": "sample G groups with replacement per replicate",
+    "within_group": "retain all records; record-weighted subset means",
+    "replicates_attempted": 10000,
+    "replicates_valid": 10000,
+    "replicates_empty_subset": 0,
+    "seed": 20261029,
+    "interval": "2.5 and 97.5 percentiles; numpy linear quantiles",
+    "fixed": "model, split, predictions, correctness, CRUS, group assignments"
+  },
+  "groups": {
+    "n_groups": 256,
+    "maximum_group_size": 2,
+    "groups_with_both_correct_and_incorrect": 0
+  },
+  "mann_whitney": {
+    "first_sample": "incorrect predictions",
+    "second_sample": "correct predictions",
+    "U": 11371.0,
+    "p_two_sided": 1.446840361098988e-16,
+    "method": "asymptotic; tie correction; continuity correction",
+    "scope": "Exploratory record-level test; assumes independent samples; not cluster-adjusted and not multiplicity-adjusted."
+  },
+  "rank_biserial": {
+    "value": 0.6532422215760396,
+    "formula": "2*U_incorrect_first/(n_incorrect*n_correct)-1",
+    "positive_direction": "higher CRUS among incorrect predictions"
+  },
+  "input_sha256": {
+    "predictions": "c1d99551db89b9030e51e65f32d51b61e1f03b6b9a015e12b83103b36ff1162a",
+    "crus_audit": "64805804cf914e9ed82f8bde0d31d6fc7f04f43cd68fbb12a11044b46ca6e2e6",
+    "manifest": "ca62ec75e905a4dbf4508ad172fe33e50f7b7779e4a90ad6f58c59c91a7c4d91",
+    "protocol": "ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f"
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3"
+  },
+  "limitations": [
+    "Post-test descriptive/exploratory analysis.",
+    "Conditional group-bootstrap interval excludes model-refitting uncertainty.",
+    "Assigned groups may not capture all related-record dependence.",
+    "Mann\u2013Whitney p-value is not a group-adjusted inferential result.",
+    "Correctness separation does not establish optimal weights or clinical utility."
+  ]
+}
