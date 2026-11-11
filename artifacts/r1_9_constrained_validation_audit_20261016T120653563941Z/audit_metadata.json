@@ -1,0 +1,21 @@
+{
+  "audit_file": "/content/drive/MyDrive/RiskAware_Revision2/corrected_experiment_outputs/validation_retrieval_prediction_audit.csv",
+  "manifest_file": "/content/drive/MyDrive/RiskAware_Revision2/data_audit/constrained_split_manifest.csv",
+  "evaluation_partition": "constrained validation",
+  "n_training_records": 773,
+  "n_validation_records": 258,
+  "query_coverage_verified": true,
+  "candidate_training_membership_verified": true,
+  "relevance_definition": "Candidate training document has the query's routing label.",
+  "document_set_recall_definition": "Number of saved same-label training candidates divided by all training documents with the query's routing label.",
+  "candidate_order_assumed": false,
+  "stage_identity_assumed": false,
+  "empty_trace_policy": "Unavailable; excluded from trace-metric denominators. Final accuracy still uses all validation queries.",
+  "comparison_caution": "Saved candidate depths differ across methods.",
+  "not_estimated": [
+    "test-set retrieval metrics",
+    "unsaved candidate depths",
+    "MRR or nDCG",
+    "separate intermediate-stage rankings"
+  ]
+}
