@@ -1,0 +1,10 @@
+method,mean_prefix_risk,summary_definition,forced_accuracy,protocol_sha256
+TFIDF_LR,0.1258400212392792,"arithmetic mean of error_rate_at_top_k for k=1,...,N",0.5992217898832685,ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f
+TFIDF_SVM,0.04964980574960856,"arithmetic mean of error_rate_at_top_k for k=1,...,N",0.8093385214007782,ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f
+BM25,0.2393239330985769,"arithmetic mean of error_rate_at_top_k for k=1,...,N",0.6342412451361867,ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f
+SBERT,0.1647081997906087,"arithmetic mean of error_rate_at_top_k for k=1,...,N",0.6731517509727627,ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f
+SK4,0.5072197892603774,"arithmetic mean of error_rate_at_top_k for k=1,...,N",0.31906614785992216,ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f
+SingleStageFull,0.13992021794835077,"arithmetic mean of error_rate_at_top_k for k=1,...,N",0.6459143968871596,ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f
+SingleStageTruncated,0.12490444815416119,"arithmetic mean of error_rate_at_top_k for k=1,...,N",0.708171206225681,ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f
+Cascade,0.111263327456469,"arithmetic mean of error_rate_at_top_k for k=1,...,N",0.7042801556420234,ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f
+LengthNormLegacy,0.1539340660984209,"arithmetic mean of error_rate_at_top_k for k=1,...,N",0.6536964980544747,ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f

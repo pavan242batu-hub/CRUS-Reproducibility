@@ -1,0 +1,7 @@
+{
+  "split": "primary_constrained",
+  "method": "MedCPT_Query",
+  "configuration_sha256": "a2a396d3c1d4ae14b961411746e524af6c31f9fec0fa426fa731607d4db81d0d",
+  "matched_retained_count": 117,
+  "metric_summary_sha256": "14e7cdb3a6cfa7eda83effcaf4a4ee2797db5b724328c97bc51105b97b669ddc"
+}

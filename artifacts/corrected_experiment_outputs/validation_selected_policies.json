@@ -1,0 +1,103 @@
+{
+  "note": "Selected from validation predictions only; not final test results.",
+  "policies": {
+    "Cascade:CRUS": {
+      "coverage": 0.5116279069767442,
+      "n_accepted": 132,
+      "n_correct_accepted": 124,
+      "n_validation": 258,
+      "selective_accuracy": 0.9393939393939394,
+      "tau_c": 0.0,
+      "tau_u": 0.128165036474669
+    },
+    "Cascade:H_pred": {
+      "coverage": 0.5116279069767442,
+      "n_accepted": 132,
+      "n_correct_accepted": 119,
+      "n_validation": 258,
+      "selective_accuracy": 0.9015151515151515,
+      "tau_c": 0.0,
+      "tau_u": 0.0926188130626631
+    },
+    "Cascade:H_retrieval": {
+      "coverage": 0.5038759689922481,
+      "n_accepted": 130,
+      "n_correct_accepted": 121,
+      "n_validation": 258,
+      "selective_accuracy": 0.9307692307692308,
+      "tau_c": 0.7957300607809691,
+      "tau_u": 0.23754358930334854
+    },
+    "Cascade:OneMinusMargin": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 115,
+      "n_validation": 258,
+      "selective_accuracy": 0.8914728682170543,
+      "tau_c": 0.9400623496361411,
+      "tau_u": 0.11672596915863602
+    },
+    "Cascade:OneMinusMaxProb": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 115,
+      "n_validation": 258,
+      "selective_accuracy": 0.8914728682170543,
+      "tau_c": 0.0,
+      "tau_u": 0.059937650363858896
+    },
+    "Cascade:V_RRF": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 115,
+      "n_validation": 258,
+      "selective_accuracy": 0.8914728682170543,
+      "tau_c": 0.9400623496361411,
+      "tau_u": 0.06250162476773613
+    },
+    "LengthNormLegacy:CRUS": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 125,
+      "n_validation": 258,
+      "selective_accuracy": 0.9689922480620154,
+      "tau_c": 0.0,
+      "tau_u": 0.11835889813325434
+    },
+    "SingleStageFull:CRUS": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 124,
+      "n_validation": 258,
+      "selective_accuracy": 0.9612403100775194,
+      "tau_c": 0.0,
+      "tau_u": 0.14398177473994106
+    },
+    "SingleStageTruncated:CRUS": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 123,
+      "n_validation": 258,
+      "selective_accuracy": 0.9534883720930233,
+      "tau_c": 0.0,
+      "tau_u": 0.1499003399305252
+    }
+  },
+  "selection_configuration": {
+    "confidence_quantile_points": 21,
+    "minimum_validation_coverage": 0.5,
+    "selection_rule": "maximize validation selective accuracy; then maximize coverage; then smaller tau_c; then smaller tau_u",
+    "uncertainty_quantile_points": 101
+  },
+  "uncertainty_configuration": {
+    "variance_ddof": 0,
+    "variance_epsilon": 1e-10,
+    "variance_stage": "final document set used for CE aggregation",
+    "weight_policy": "fixed heuristic; not optimized",
+    "weights": [
+      0.5,
+      0.3,
+      0.2
+    ]
+  }
+}

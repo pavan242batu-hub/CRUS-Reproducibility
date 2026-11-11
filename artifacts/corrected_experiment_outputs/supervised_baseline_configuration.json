@@ -1,0 +1,40 @@
+{
+  "seed": 42,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "max_features": 18000,
+  "sublinear_tf": true,
+  "lr_C": 1.0,
+  "lr_max_iter": 2000,
+  "svm_C": 1.0,
+  "svm_max_iter": 3000,
+  "calibration_method": "sigmoid",
+  "calibration_ensemble": true,
+  "sklearn_version": "1.6.1",
+  "training_records": 773,
+  "classes": [
+    "ALLERGY",
+    "ASSESSMENT",
+    "CC",
+    "DIAGNOSIS",
+    "DISPOSITION",
+    "EDCOURSE",
+    "EXAM",
+    "FAM/SOCHX",
+    "GENHX",
+    "GYNHX",
+    "IMAGING",
+    "IMMUNIZATIONS",
+    "MEDICATIONS",
+    "PASTMEDICALHX",
+    "PASTSURGICAL",
+    "PLAN",
+    "ROS"
+  ],
+  "input_fields": [
+    "normalized dialogue"
+  ],
+  "calibration_folds": 3
+}

@@ -1,0 +1,4 @@
+record_id,representative_record_id,source_file,label,dialogue_hash,reason
+MTS-Dialog-TrainingSet.csv:989,MTS-Dialog-TrainingSet.csv:901,MTS-Dialog-TrainingSet.csv,ALLERGY,15894336848786af40ce3d4188cd3cd1d502b5aee22ce0c2d1843ee489991ebe,Redundant normalized dialogue/label pair
+MTS-Dialog-TrainingSet.csv:1109,MTS-Dialog-TrainingSet.csv:256,MTS-Dialog-TrainingSet.csv,FAM/SOCHX,f19cd53f5f2487879aefcf1b922e1c7031a9d837671af711cc866b3152d9430d,Redundant normalized dialogue/label pair
+MTS-Dialog-ValidationSet.csv:58,MTS-Dialog-TrainingSet.csv:56,MTS-Dialog-ValidationSet.csv,FAM/SOCHX,42228428c63c3c0eb922341fa77ce080e648ba202449213f9f0fc670b68eaead,Redundant normalized dialogue/label pair

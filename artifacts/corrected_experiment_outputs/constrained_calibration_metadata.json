@@ -1,0 +1,10 @@
+{
+  "folds": 3,
+  "seed": 42,
+  "scipy_version": "1.16.3",
+  "solver_status": 0,
+  "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "allocation": "Training-only constrained group allocation",
+  "objective": "Seeded allocation costs; no prediction outcomes",
+  "manifest_sha256": "eab4a31ac75764870fec9d9f7077ab1b82dbffc0b332aa562c4ecb6560afbf67"
+}

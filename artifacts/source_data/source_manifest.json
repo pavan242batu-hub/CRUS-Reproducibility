@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/abachaa/MTS-Dialog",
+  "commit": "3ff0801933608d6f570468c13125125fb5cabdea",
+  "files": {
+    "MTS-Dialog-TrainingSet.csv": {
+      "sha256": "65a28681dd59fc159681ea026e44610f2af7bc64a0e7f892d763eb03d9f503dc",
+      "rows": 1201
+    },
+    "MTS-Dialog-ValidationSet.csv": {
+      "sha256": "227206520c4534381c0d7fba6d3f09319a9af5a6d9603a93c0341af1198e3958",
+      "rows": 100
+    }
+  }
+}

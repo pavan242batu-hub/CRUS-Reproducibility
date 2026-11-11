@@ -1,0 +1,9 @@
+{
+  "input": "normalized dialogue only",
+  "exact_duplicate_policy": "One representative per normalized dialogue/label; training-source order then source row",
+  "conflicting_label_policy": "Retain distinct labels for identical dialogue; keep together in one split group",
+  "near_duplicate_policy": "Retain reviewed near-identical records; group together",
+  "minimum_class_count": 5,
+  "filter_order": "exact dialogue/label deduplication, then rare-class filtering, then splitting",
+  "limitation": "Similarity screening and inspected pairs do not prove absence of all related encounters"
+}

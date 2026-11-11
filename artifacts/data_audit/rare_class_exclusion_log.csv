@@ -1,0 +1,11 @@
+record_id,source_file,label,group_id,reason
+MTS-Dialog-TrainingSet.csv:21,MTS-Dialog-TrainingSet.csv,OTHER_HISTORY,dialogue_group_bad7f72b100755e22d85e54391a46c481fb2ba187b744eb392199d79fe80364d,Class below minimum-five count after exact deduplication
+MTS-Dialog-TrainingSet.csv:108,MTS-Dialog-TrainingSet.csv,LABS,dialogue_group_ac3260f1cb44437d4f788e301638992cf12b02243930b63e52626fd816661b43,Class below minimum-five count after exact deduplication
+MTS-Dialog-TrainingSet.csv:229,MTS-Dialog-TrainingSet.csv,PROCEDURES,dialogue_group_db3612d88cf4bd1254c81c536dd8cd4e303a94833ef63105cec489bb282a0828,Class below minimum-five count after exact deduplication
+MTS-Dialog-TrainingSet.csv:920,MTS-Dialog-TrainingSet.csv,PROCEDURES,dialogue_group_e53aef48c2cdd3b46b66c53deae96f4e890b22ffc0cd95b5a6a134ed61740d24,Class below minimum-five count after exact deduplication
+MTS-Dialog-TrainingSet.csv:950,MTS-Dialog-TrainingSet.csv,OTHER_HISTORY,dialogue_group_5fb24f74e8acdc283e84eccc3694c4731aecc1e6defda8acf4abbd9068bb6c6e,Class below minimum-five count after exact deduplication
+MTS-Dialog-TrainingSet.csv:1073,MTS-Dialog-TrainingSet.csv,PROCEDURES,dialogue_group_5a79f23f14f3981679ea3eb3653e1484265d82495a7514687254bd538bbd312a,Class below minimum-five count after exact deduplication
+MTS-Dialog-TrainingSet.csv:1160,MTS-Dialog-TrainingSet.csv,LABS,dialogue_group_5ceae152b04b382b6173f6539b1925e8251e0c9ab9085ce4c2200d3b185e4363,Class below minimum-five count after exact deduplication
+MTS-Dialog-ValidationSet.csv:36,MTS-Dialog-ValidationSet.csv,LABS,dialogue_group_66bdf1f3c19688a5a3a62edd37040416de95cef0e79c87a0597e0e9ccf310c33,Class below minimum-five count after exact deduplication
+MTS-Dialog-ValidationSet.csv:94,MTS-Dialog-ValidationSet.csv,OTHER_HISTORY,dialogue_group_d70324f1353c81c86b5ccf7bd99bb2b24f62e1da0de170a935a5a11454ec3416,Class below minimum-five count after exact deduplication
+MTS-Dialog-ValidationSet.csv:95,MTS-Dialog-ValidationSet.csv,PROCEDURES,dialogue_group_a1a55b087cc635c4f5228e0f416b528e86d59b70362eecb3be25321b253dc939,Class below minimum-five count after exact deduplication

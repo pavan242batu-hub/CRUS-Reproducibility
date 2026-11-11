@@ -1,0 +1,3 @@
+record_id_a,record_id_b,decision,reason
+MTS-Dialog-TrainingSet.csv:7,MTS-Dialog-TrainingSet.csv:104,retain_both_group_together,Near-identical ALLERGY dialogue; know/known wording difference
+MTS-Dialog-TrainingSet.csv:120,MTS-Dialog-TrainingSet.csv:666,retain_both_group_together,Near-identical FAM/SOCHX dialogue; None/Nothing wording difference
