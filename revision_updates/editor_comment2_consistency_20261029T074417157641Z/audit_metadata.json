@@ -1,0 +1,19 @@
+{
+  "N": 257,
+  "ranking": "score descending; record ID ascending",
+  "native_gate": "confidence >= tau_c AND CRUS <= tau_u",
+  "source_sha256": {
+    "protocol": "ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f",
+    "predictions": "c1d99551db89b9030e51e65f32d51b61e1f03b6b9a015e12b83103b36ff1162a",
+    "gates": "64805804cf914e9ed82f8bde0d31d6fc7f04f43cd68fbb12a11044b46ca6e2e6",
+    "saved_curves": "1363d9b01a1425c69b01f1fc94f64220ca115aa7e8459612c0cf9dfb9ba3e02b",
+    "manifest": "ca62ec75e905a4dbf4508ad172fe33e50f7b7779e4a90ad6f58c59c91a7c4d91"
+  },
+  "checks": {
+    "manifest_matches_protocol": true,
+    "all_prediction_ids_and_labels_verified": true,
+    "all_saved_ranking_curve_points_verified": true,
+    "all_saved_native_gate_decisions_verified": true
+  },
+  "scope": "Numerical operating-point and ranking-curve audit only. Not a complete manuscript, threshold-sweep, or figure-asset audit."
+}
