@@ -1,0 +1,7 @@
+{
+  "split_seed": 11,
+  "method": "MedCPT_Query",
+  "configuration_sha256": "e59b064707c61bb1be16160f9cb630630ec243033f811a9f9aa9f5e739bf9afe",
+  "matched_retained_count": 128,
+  "metric_summary_sha256": "6f6c8726b8f60796c3651a6e5ce4a61720d72c95638b4d5e9dd4d92e0bb804ae"
+}
