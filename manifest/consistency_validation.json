@@ -1,0 +1,3556 @@
+{
+  "scope": "Internal consistency and array-schema checks only",
+  "checks": [
+    {
+      "check": "Primary manifest: required columns",
+      "passed": true,
+      "details": {
+        "missing_columns": []
+      }
+    },
+    {
+      "check": "Primary manifest: record IDs unique and nonmissing",
+      "passed": true,
+      "details": {
+        "rows": 1288,
+        "duplicate_record_ids": 0
+      }
+    },
+    {
+      "check": "Primary manifest: manifest fields nonmissing",
+      "passed": true,
+      "details": {
+        "split": 0,
+        "group_id": 0,
+        "label": 0,
+        "record_id": 0
+      }
+    },
+    {
+      "check": "Primary manifest: groups do not cross partitions",
+      "passed": true,
+      "details": {
+        "cross_partition_groups": 0
+      }
+    },
+    {
+      "check": "Primary manifest: expected split sizes",
+      "passed": true,
+      "details": {
+        "observed": {
+          "train": 773,
+          "validation": 258,
+          "test": 257
+        },
+        "expected": {
+          "train": 773,
+          "validation": 258,
+          "test": 257
+        }
+      }
+    },
+    {
+      "check": "Primary manifest: retained labels",
+      "passed": true,
+      "details": {
+        "label_count": 17
+      }
+    },
+    {
+      "check": "Primary predictions: unique record/method pairs",
+      "passed": true,
+      "details": {
+        "duplicate_pairs": 0
+      }
+    },
+    {
+      "check": "Primary predictions: test coverage for BM25",
+      "passed": true,
+      "details": {
+        "rows": 257,
+        "missing_test_ids": 0,
+        "unexpected_ids": 0
+      }
+    },
+    {
+      "check": "Primary predictions: test coverage for Cascade",
+      "passed": true,
+      "details": {
+        "rows": 257,
+        "missing_test_ids": 0,
+        "unexpected_ids": 0
+      }
+    },
+    {
+      "check": "Primary predictions: test coverage for LengthNormLegacy",
+      "passed": true,
+      "details": {
+        "rows": 257,
+        "missing_test_ids": 0,
+        "unexpected_ids": 0
+      }
+    },
+    {
+      "check": "Primary predictions: test coverage for SBERT",
+      "passed": true,
+      "details": {
+        "rows": 257,
+        "missing_test_ids": 0,
+        "unexpected_ids": 0
+      }
+    },
+    {
+      "check": "Primary predictions: test coverage for SK4",
+      "passed": true,
+      "details": {
+        "rows": 257,
+        "missing_test_ids": 0,
+        "unexpected_ids": 0
+      }
+    },
+    {
+      "check": "Primary predictions: test coverage for SingleStageFull",
+      "passed": true,
+      "details": {
+        "rows": 257,
+        "missing_test_ids": 0,
+        "unexpected_ids": 0
+      }
+    },
+    {
+      "check": "Primary predictions: test coverage for SingleStageTruncated",
+      "passed": true,
+      "details": {
+        "rows": 257,
+        "missing_test_ids": 0,
+        "unexpected_ids": 0
+      }
+    },
+    {
+      "check": "Primary predictions: test coverage for TFIDF_LR",
+      "passed": true,
+      "details": {
+        "rows": 257,
+        "missing_test_ids": 0,
+        "unexpected_ids": 0
+      }
+    },
+    {
+      "check": "Primary predictions: test coverage for TFIDF_SVM",
+      "passed": true,
+      "details": {
+        "rows": 257,
+        "missing_test_ids": 0,
+        "unexpected_ids": 0
+      }
+    },
+    {
+      "check": "Primary predictions: labels agree with manifest",
+      "passed": true,
+      "details": {
+        "mismatched_or_unmapped_rows": 0
+      }
+    },
+    {
+      "check": "test_frozen_CRUS_acceptance_audit.csv: unique policy keys",
+      "passed": true,
+      "details": {
+        "duplicate_keys": 0
+      }
+    },
+    {
+      "check": "test_frozen_CRUS_acceptance_audit.csv: links to saved predictions",
+      "passed": true,
+      "details": {
+        "unlinked_rows": 0
+      }
+    },
+    {
+      "check": "test_frozen_CRUS_acceptance_audit.csv: acceptance values interpretable",
+      "passed": true,
+      "details": {
+        "invalid_or_missing_rows": 0
+      }
+    },
+    {
+      "check": "test_matched_count_acceptance_audit.csv: unique policy keys",
+      "passed": true,
+      "details": {
+        "duplicate_keys": 0
+      }
+    },
+    {
+      "check": "test_matched_count_acceptance_audit.csv: links to saved predictions",
+      "passed": true,
+      "details": {
+        "unlinked_rows": 0
+      }
+    },
+    {
+      "check": "test_matched_count_acceptance_audit.csv: acceptance values interpretable",
+      "passed": true,
+      "details": {
+        "invalid_or_missing_rows": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 11: required columns",
+      "passed": true,
+      "details": {
+        "missing_columns": []
+      }
+    },
+    {
+      "check": "Repeated split seed 11: record IDs unique and nonmissing",
+      "passed": true,
+      "details": {
+        "rows": 1288,
+        "duplicate_record_ids": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 11: manifest fields nonmissing",
+      "passed": true,
+      "details": {
+        "split": 0,
+        "group_id": 0,
+        "label": 0,
+        "record_id": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 11: groups do not cross partitions",
+      "passed": true,
+      "details": {
+        "cross_partition_groups": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 22: required columns",
+      "passed": true,
+      "details": {
+        "missing_columns": []
+      }
+    },
+    {
+      "check": "Repeated split seed 22: record IDs unique and nonmissing",
+      "passed": true,
+      "details": {
+        "rows": 1288,
+        "duplicate_record_ids": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 22: manifest fields nonmissing",
+      "passed": true,
+      "details": {
+        "split": 0,
+        "group_id": 0,
+        "label": 0,
+        "record_id": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 22: groups do not cross partitions",
+      "passed": true,
+      "details": {
+        "cross_partition_groups": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 33: required columns",
+      "passed": true,
+      "details": {
+        "missing_columns": []
+      }
+    },
+    {
+      "check": "Repeated split seed 33: record IDs unique and nonmissing",
+      "passed": true,
+      "details": {
+        "rows": 1288,
+        "duplicate_record_ids": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 33: manifest fields nonmissing",
+      "passed": true,
+      "details": {
+        "split": 0,
+        "group_id": 0,
+        "label": 0,
+        "record_id": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 33: groups do not cross partitions",
+      "passed": true,
+      "details": {
+        "cross_partition_groups": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 44: required columns",
+      "passed": true,
+      "details": {
+        "missing_columns": []
+      }
+    },
+    {
+      "check": "Repeated split seed 44: record IDs unique and nonmissing",
+      "passed": true,
+      "details": {
+        "rows": 1288,
+        "duplicate_record_ids": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 44: manifest fields nonmissing",
+      "passed": true,
+      "details": {
+        "split": 0,
+        "group_id": 0,
+        "label": 0,
+        "record_id": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 44: groups do not cross partitions",
+      "passed": true,
+      "details": {
+        "cross_partition_groups": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 55: required columns",
+      "passed": true,
+      "details": {
+        "missing_columns": []
+      }
+    },
+    {
+      "check": "Repeated split seed 55: record IDs unique and nonmissing",
+      "passed": true,
+      "details": {
+        "rows": 1288,
+        "duplicate_record_ids": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 55: manifest fields nonmissing",
+      "passed": true,
+      "details": {
+        "split": 0,
+        "group_id": 0,
+        "label": 0,
+        "record_id": 0
+      }
+    },
+    {
+      "check": "Repeated split seed 55: groups do not cross partitions",
+      "passed": true,
+      "details": {
+        "cross_partition_groups": 0
+      }
+    }
+  ],
+  "array_schemas": [
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_11/experiment_outputs/test_BM25_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_11/experiment_outputs/test_Cascade_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_11/experiment_outputs/test_LengthNormLegacy_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_11/experiment_outputs/test_SBERT_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_11/experiment_outputs/test_SK4_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_11/experiment_outputs/test_SingleStageFull_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_11/experiment_outputs/test_SingleStageTruncated_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_11/experiment_outputs/test_TFIDF_LR_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_11/experiment_outputs/test_TFIDF_SVM_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_22/experiment_outputs/test_BM25_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_22/experiment_outputs/test_Cascade_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_22/experiment_outputs/test_LengthNormLegacy_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_22/experiment_outputs/test_SBERT_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_22/experiment_outputs/test_SK4_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_22/experiment_outputs/test_SingleStageFull_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_22/experiment_outputs/test_SingleStageTruncated_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_22/experiment_outputs/test_TFIDF_LR_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_22/experiment_outputs/test_TFIDF_SVM_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_33/experiment_outputs/test_BM25_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_33/experiment_outputs/test_Cascade_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_33/experiment_outputs/test_LengthNormLegacy_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_33/experiment_outputs/test_SBERT_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_33/experiment_outputs/test_SK4_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_33/experiment_outputs/test_SingleStageFull_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_33/experiment_outputs/test_SingleStageTruncated_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_33/experiment_outputs/test_TFIDF_LR_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_33/experiment_outputs/test_TFIDF_SVM_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_44/experiment_outputs/test_BM25_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_44/experiment_outputs/test_Cascade_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_44/experiment_outputs/test_LengthNormLegacy_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_44/experiment_outputs/test_SBERT_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_44/experiment_outputs/test_SK4_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_44/experiment_outputs/test_SingleStageFull_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_44/experiment_outputs/test_SingleStageTruncated_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_44/experiment_outputs/test_TFIDF_LR_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_44/experiment_outputs/test_TFIDF_SVM_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_55/experiment_outputs/test_BM25_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_55/experiment_outputs/test_Cascade_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_55/experiment_outputs/test_LengthNormLegacy_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_55/experiment_outputs/test_SBERT_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_55/experiment_outputs/test_SK4_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_55/experiment_outputs/test_SingleStageFull_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_55/experiment_outputs/test_SingleStageTruncated_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "components",
+          "shape": [
+            257,
+            3
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_55/experiment_outputs/test_TFIDF_LR_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    },
+    {
+      "file": "artifacts/supplementary_repeated_splits/seed_55/experiment_outputs/test_TFIDF_SVM_arrays.npz",
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            257
+          ],
+          "dtype": "<U31",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            257
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "ranking_score",
+          "shape": [
+            257
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "protocol_sha256",
+          "shape": [],
+          "dtype": "<U64",
+          "status": "inspected_without_pickle"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            257,
+            17
+          ],
+          "dtype": "float64",
+          "status": "inspected_without_pickle"
+        }
+      ],
+      "archive_error": null
+    }
+  ],
+  "privacy_review_completed": false,
+  "metric_regeneration_verified": false
+}

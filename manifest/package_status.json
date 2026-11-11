@@ -1,0 +1,23 @@
+{
+  "status": "STAGING_PARTIALLY_VERIFIED",
+  "created_utc": "2026-10-19T07:07:12.649565+00:00",
+  "copied_files": 105,
+  "missing_required": [],
+  "optional_paths_not_found": [],
+  "experiments_executed": false,
+  "privacy_review_completed": false,
+  "array_contents_reviewed": false,
+  "execution_instructions_verified": false,
+  "metric_regeneration_test_completed": false,
+  "additional_revision_experiments_packaged": false,
+  "matched_ranking_verification": {
+    "rows": 45,
+    "metrics": 11,
+    "mismatched_values": 0,
+    "integer_comparison": "exact",
+    "float_absolute_tolerance": 1e-10,
+    "float_relative_tolerance": 0,
+    "report": "regenerated/matched_rankings_agreement_report.csv"
+  },
+  "metric_regeneration_note": "Specified primary metrics regenerated; matched-ranking agreement verified. Complete manuscript reproduction pending."
+}

@@ -1,0 +1,626 @@
+[
+  {
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          257
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          258
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          257
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          258
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          257
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          258
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          257
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          258
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          257
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          258
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          257
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          257
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          257
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  },
+  {
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "fields": [
+      {
+        "key": "record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "true_labels",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "predictions",
+        "shape": [
+          258
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "classes",
+        "shape": [
+          17
+        ],
+        "dtype": "<U13"
+      },
+      {
+        "key": "ranking_score",
+        "shape": [
+          258
+        ],
+        "dtype": "float32"
+      },
+      {
+        "key": "retrieved_record_ids",
+        "shape": [
+          258
+        ],
+        "dtype": "<U31"
+      },
+      {
+        "key": "configuration_sha256",
+        "shape": [],
+        "dtype": "<U64"
+      }
+    ]
+  }
+]

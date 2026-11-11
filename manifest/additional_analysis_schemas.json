@@ -1,0 +1,3014 @@
+[
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/all_400_records_screening_audit.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "official_test_set",
+        "source_filename",
+        "source_csv_row",
+        "dialogue",
+        "gold",
+        "blank_dialogue",
+        "supported_source_label",
+        "exact_normalized_source_overlap",
+        "repeated_dialogue_in_new_test_pool",
+        "normalized_dialogue_sha256",
+        "automatic_exclusion_reasons",
+        "passes_automatic_checks",
+        "near_source_overlap_review_required",
+        "passes_automated_screen_only"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/evaluation_20261017T152621764438Z/calibration.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "scope",
+        "records",
+        "ece_15_bins",
+        "brier_sum17",
+        "nll_floor_1e_minus12"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/evaluation_20261017T152621764438Z/case_audit.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "official_test_set",
+        "source_filename",
+        "source_csv_row",
+        "gold",
+        "prediction",
+        "correct",
+        "confidence",
+        "predictive_entropy",
+        "probability_margin",
+        "h_retrieval",
+        "v_rrf",
+        "crus",
+        "native_accepted"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/evaluation_20261017T152621764438Z/class_deferral.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "label",
+        "support",
+        "forced_correct",
+        "forced_accuracy",
+        "accepted",
+        "coverage",
+        "accepted_correct",
+        "accepted_errors",
+        "selective_accuracy",
+        "deferred",
+        "deferred_correct",
+        "deferred_errors"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/evaluation_20261017T152621764438Z/metrics.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "scope",
+        "independent_cross_dataset_validation",
+        "historical_development_non_use_verified",
+        "overall",
+        "by_official_test_set",
+        "class_support",
+        "absent_source_classes",
+        "frozen_policy",
+        "conventions",
+        "limitations",
+        "input_checksums"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/evaluation_20261017T152621764438Z/risk_coverage.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "selector",
+        "accepted_count",
+        "coverage",
+        "cumulative_errors",
+        "selective_risk"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/evaluation_20261017T152621764438Z/uncertainty_comparison.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "selector",
+        "aurc_mean_prefix_risk",
+        "error_auroc",
+        "error_average_precision",
+        "matched_accepted_count",
+        "matched_errors",
+        "matched_risk",
+        "matched_accuracy"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/evaluation_reference.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "official_test_set",
+        "source_filename",
+        "source_csv_row",
+        "gold"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/inference_inputs.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "query"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/inference_status.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "completed",
+        "records_written",
+        "predictions_sha256",
+        "performance_metrics_computed"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/predictions.jsonl",
+    "extension": ".jsonl",
+    "schema": {
+      "first_record_type": "dict",
+      "first_record_keys": [
+        "record_id",
+        "query_sha256",
+        "pred_label",
+        "probabilities",
+        "confidence",
+        "h_pred",
+        "h_retrieval",
+        "v_rrf",
+        "crus",
+        "accepted",
+        "candidate_ids",
+        "candidate_rrf_scores",
+        "shortlist",
+        "fallback"
+      ],
+      "scope": "First nonempty record only"
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_5_additional_mts_exploratory_20261017T101158614697Z/run_manifest.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "evaluation_type",
+        "independent_cross_dataset_validation",
+        "historical_development_non_use_verified",
+        "provenance_and_semantic_overlap_review_completed",
+        "selection",
+        "downloaded_records",
+        "selected_records",
+        "source_training_records",
+        "classes_in_probability_order",
+        "tau_c",
+        "tau_u",
+        "crus_weights",
+        "device",
+        "loaded_revisions",
+        "scorer_source_sha256",
+        "source_regression_directory",
+        "source_regression_summary_sha256",
+        "screening_audit_sha256",
+        "inference_inputs_sha256",
+        "evaluation_reference_sha256",
+        "created_utc"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/analysis_metadata.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "AURC",
+        "CRUS",
+        "PR_metrics",
+        "calibrated_comparator",
+        "calibrator_parameters",
+        "classifier",
+        "confidence_intervals",
+        "error_positive_class",
+        "input_hashes",
+        "nominal_coverage_rounding",
+        "ranking",
+        "repeat_sd"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/correctness_calibration_by_run.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run",
+        "confidence_method",
+        "correctness_Brier",
+        "correctness_ECE_10_equal_width"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/descriptive_paired_metric_differences.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run",
+        "comparison",
+        "metric",
+        "difference"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/five_repeat_calibration_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "confidence_method",
+        "correctness_Brier_mean",
+        "correctness_Brier_std",
+        "correctness_ECE_10_equal_width_mean",
+        "correctness_ECE_10_equal_width_std"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/five_repeat_risk_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "score",
+        "target",
+        "coverage_mean",
+        "coverage_std",
+        "risk_mean",
+        "risk_std",
+        "selective_accuracy_mean",
+        "selective_accuracy_std"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/five_repeat_score_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "score",
+        "AURC_mean",
+        "AURC_std",
+        "error_AUROC_mean",
+        "error_AUROC_std",
+        "error_AP_mean",
+        "error_AP_std",
+        "error_AUPRC_trapezoidal_mean",
+        "error_AUPRC_trapezoidal_std"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/fixed_coverage_risk_by_run.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run",
+        "score",
+        "target",
+        "n_accepted",
+        "coverage",
+        "n_errors_accepted",
+        "risk",
+        "selective_accuracy"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/per_record_score_and_selection_audit.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run",
+        "record_id",
+        "score",
+        "uncertainty",
+        "correct",
+        "accepted_at_native_count",
+        "native_CRUS_accepted"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/risk_coverage_curves.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run",
+        "score",
+        "n_accepted",
+        "coverage",
+        "n_errors_accepted",
+        "risk"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_7_uncertainty_comparison_20261016T103838081197Z/score_metrics_by_run.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run",
+        "score",
+        "N",
+        "n_errors",
+        "AURC",
+        "error_AUROC",
+        "error_AP",
+        "error_AUPRC_trapezoidal",
+        "error_prevalence"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_8_validation_weight_search_20261016T104727378070Z/analysis_metadata.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "additional_candidate",
+        "confidence_candidates_include_zero",
+        "confidence_quantile_points",
+        "data_used",
+        "gate_objective",
+        "grid_step",
+        "input_hashes",
+        "minimum_validation_coverage",
+        "quantile_method",
+        "selection_status",
+        "simplex_grid_candidates",
+        "uncertainty_quantile_points",
+        "weight_ties"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_8_validation_weight_search_20261016T104727378070Z/frozen_test_evaluation/evaluation_metadata.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "AURC",
+        "confidence_intervals",
+        "frozen_weight_policies_sha256",
+        "matched_count",
+        "original_results",
+        "ranking",
+        "repeat_sd",
+        "selection",
+        "test_input_hashes",
+        "validation_search_metadata_sha256"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_8_validation_weight_search_20261016T104727378070Z/frozen_test_evaluation/five_repeat_weight_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "configuration",
+        "gate_coverage_mean",
+        "gate_coverage_std",
+        "gate_risk_mean",
+        "gate_risk_std",
+        "gate_selective_accuracy_mean",
+        "gate_selective_accuracy_std",
+        "ranking_AURC_mean",
+        "ranking_AURC_std",
+        "matched_coverage_mean",
+        "matched_coverage_std",
+        "matched_risk_mean",
+        "matched_risk_std",
+        "matched_selective_accuracy_mean",
+        "matched_selective_accuracy_std"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_8_validation_weight_search_20261016T104727378070Z/frozen_test_evaluation/frozen_weight_test_results.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run",
+        "configuration",
+        "w_H_pred",
+        "w_H_retrieval",
+        "w_V_RRF",
+        "tau_c",
+        "tau_u",
+        "validation_coverage",
+        "validation_selective_accuracy",
+        "test_N",
+        "gate_n_accepted",
+        "gate_n_errors",
+        "gate_coverage",
+        "gate_risk",
+        "gate_selective_accuracy",
+        "ranking_AURC",
+        "matched_n_accepted",
+        "matched_coverage",
+        "matched_n_errors",
+        "matched_risk",
+        "matched_selective_accuracy"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_8_validation_weight_search_20261016T104727378070Z/frozen_test_evaluation/per_record_weight_selection_audit.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run",
+        "record_id",
+        "configuration",
+        "uncertainty",
+        "correct",
+        "gate_accepted",
+        "matched_accepted"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_8_validation_weight_search_20261016T104727378070Z/frozen_weight_policies.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "primary",
+        "seed_11",
+        "seed_22",
+        "seed_33",
+        "seed_44",
+        "seed_55"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_8_validation_weight_search_20261016T104727378070Z/validation_simplex_sensitivity.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run",
+        "candidate",
+        "w_H_pred",
+        "w_H_retrieval",
+        "w_V_RRF",
+        "is_original_weights",
+        "tau_c",
+        "tau_u",
+        "n_validation",
+        "n_accepted",
+        "n_correct_accepted",
+        "coverage",
+        "selective_accuracy"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_9_constrained_validation_audit_20261016T120653563941Z/audit_metadata.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "audit_file",
+        "manifest_file",
+        "evaluation_partition",
+        "n_training_records",
+        "n_validation_records",
+        "query_coverage_verified",
+        "candidate_training_membership_verified",
+        "relevance_definition",
+        "document_set_recall_definition",
+        "candidate_order_assumed",
+        "stage_identity_assumed",
+        "empty_trace_policy",
+        "comparison_caution",
+        "not_estimated"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_9_constrained_validation_audit_20261016T120653563941Z/conditional_accuracy.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "method",
+        "candidate_field",
+        "correct_label_present",
+        "n_queries",
+        "n_correct_predictions",
+        "final_accuracy"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_9_constrained_validation_audit_20261016T120653563941Z/method_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "method",
+        "n_validation_queries",
+        "n_document_traces",
+        "min_saved_documents",
+        "mean_saved_documents",
+        "max_saved_documents",
+        "document_correct_label_presence_rate",
+        "mean_document_set_recall",
+        "n_shortlist_traces",
+        "mean_saved_shortlist_size",
+        "shortlist_correct_label_presence_rate",
+        "prediction_in_shortlist_rate",
+        "final_accuracy"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_9_constrained_validation_audit_20261016T120653563941Z/per_query_diagnostics.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "method",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "document_trace_available",
+        "saved_document_count",
+        "same_label_document_count",
+        "document_correct_label_present",
+        "document_set_recall",
+        "shortlist_trace_available",
+        "saved_shortlist_size",
+        "shortlist_correct_label_present",
+        "prediction_in_shortlist"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/RUN_COMPLETE.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "completed_configurations",
+        "validation_queries_per_configuration",
+        "baseline_configuration_restored",
+        "test_predictions_loaded"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/analysis_metadata.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "analysis",
+        "partition",
+        "n_validation",
+        "n_training",
+        "classes",
+        "baseline_reproduction",
+        "baseline_configuration",
+        "configurations",
+        "sweep_links",
+        "retrieval_depth_scope",
+        "final_document_limit_fixed",
+        "full_text_definition",
+        "full_text_character_limit_used",
+        "cross_encoder_max_tokens",
+        "prediction_evaluation",
+        "uncertainty_weights",
+        "gate_thresholds",
+        "test_predictions_loaded",
+        "selection_status",
+        "package_versions",
+        "input_hashes"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/completed_configuration_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "topk_retrieve",
+        "rrf_k",
+        "rrf_top_n",
+        "cascade_top_k_classes",
+        "doc_truncate_chars",
+        "n_queries",
+        "accuracy",
+        "macro_f1",
+        "document_label_presence",
+        "shortlist_label_presence",
+        "mean_documents",
+        "mean_shortlist_size",
+        "fallback_rate",
+        "character_truncation_fraction",
+        "mean_scoring_chars_per_document",
+        "reused_verified_baseline",
+        "run_elapsed_seconds"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_00_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_00_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_01_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_01_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_02_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_02_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_03_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_03_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_04_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_04_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_05_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_05_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_06_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_06_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_07_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_07_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_08_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_08_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_09_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_09_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_10_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_10_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_11_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_11_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_12_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_12_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_13_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_13_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_14_arrays.npz",
+    "extension": ".npz",
+    "schema": {
+      "arrays": [
+        {
+          "key": "record_ids",
+          "shape": [
+            258
+          ],
+          "dtype": "<U31"
+        },
+        {
+          "key": "true_labels",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "predictions",
+          "shape": [
+            258
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "classes",
+          "shape": [
+            17
+          ],
+          "dtype": "<U13"
+        },
+        {
+          "key": "probabilities",
+          "shape": [
+            258,
+            17
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "confidence",
+          "shape": [
+            258
+          ],
+          "dtype": "float64"
+        },
+        {
+          "key": "components",
+          "shape": [
+            258,
+            3
+          ],
+          "dtype": "float64"
+        }
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/config_14_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "run_id",
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "n_documents",
+        "n_shortlist_labels",
+        "document_label_present",
+        "shortlist_label_present",
+        "fallback",
+        "n_char_truncated_documents",
+        "total_original_document_chars",
+        "total_scoring_document_chars",
+        "shortlist",
+        "retrieved_training_ids",
+        "rrf_scores",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_10_validation_sensitivity_20261016T125818056792Z/sensitivity_table.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "parameter",
+        "value",
+        "run_id",
+        "topk_retrieve",
+        "rrf_k",
+        "rrf_top_n",
+        "cascade_top_k_classes",
+        "doc_truncate_chars",
+        "n_queries",
+        "accuracy",
+        "macro_f1",
+        "document_label_presence",
+        "shortlist_label_presence",
+        "mean_documents",
+        "mean_shortlist_size",
+        "fallback_rate",
+        "character_truncation_fraction",
+        "mean_scoring_chars_per_document",
+        "reused_verified_baseline",
+        "run_elapsed_seconds",
+        "accuracy_change_pp",
+        "macro_f1_change"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/RUN_COMPLETE.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "completed_runs",
+        "perturbed_query_evaluations",
+        "configuration_unchanged"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/all_perturbed_queries.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "eligible_words",
+        "edited_words",
+        "realized_word_edit_rate",
+        "original_turns",
+        "retained_turns",
+        "removed_turns",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/analysis_metadata.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "analysis",
+        "partition",
+        "n_queries",
+        "configuration",
+        "uncertainty_configuration",
+        "frozen_policy",
+        "seeds",
+        "conditions",
+        "turn_removal_rounding",
+        "prefix_rounding",
+        "spelling_rounding",
+        "spelling_operation",
+        "limitations"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/clean_baseline.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/condition_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "condition",
+        "accuracy",
+        "macro_f1",
+        "mean_CRUS",
+        "mean_delta_CRUS",
+        "coverage",
+        "selective_accuracy",
+        "accepted_errors",
+        "new_errors",
+        "new_error_mean_delta_CRUS",
+        "new_error_fraction_CRUS_increased",
+        "changed_fraction"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/per_run_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "condition",
+        "seed",
+        "n",
+        "accuracy",
+        "macro_f1",
+        "mean_CRUS",
+        "coverage",
+        "n_accepted",
+        "accepted_errors",
+        "selective_accuracy",
+        "mean_delta_CRUS",
+        "changed_fraction",
+        "new_errors",
+        "new_error_mean_delta_CRUS",
+        "new_error_fraction_CRUS_increased"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/prefix_50_seed42_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "original_turns",
+        "retained_turns",
+        "removed_turns",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/prefix_75_seed42_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "original_turns",
+        "retained_turns",
+        "removed_turns",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/realized_perturbation_rates.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "",
+        "realized_word_edit_rate",
+        "realized_word_edit_rate",
+        "realized_word_edit_rate",
+        "realized_turn_removal_rate",
+        "realized_turn_removal_rate",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/spelling_05_seed42_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "eligible_words",
+        "edited_words",
+        "realized_word_edit_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/spelling_05_seed43_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "eligible_words",
+        "edited_words",
+        "realized_word_edit_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/spelling_05_seed44_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "eligible_words",
+        "edited_words",
+        "realized_word_edit_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/spelling_10_seed42_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "eligible_words",
+        "edited_words",
+        "realized_word_edit_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/spelling_10_seed43_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "eligible_words",
+        "edited_words",
+        "realized_word_edit_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/spelling_10_seed44_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "eligible_words",
+        "edited_words",
+        "realized_word_edit_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/transition_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "condition",
+        "transition",
+        "n_query_realizations",
+        "mean_delta_CRUS",
+        "fraction_CRUS_increased"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/turn_removal_10_seed42_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "original_turns",
+        "retained_turns",
+        "removed_turns",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/turn_removal_10_seed43_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "original_turns",
+        "retained_turns",
+        "removed_turns",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/turn_removal_10_seed44_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "original_turns",
+        "retained_turns",
+        "removed_turns",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/turn_removal_25_seed42_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "original_turns",
+        "retained_turns",
+        "removed_turns",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/turn_removal_25_seed43_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "original_turns",
+        "retained_turns",
+        "removed_turns",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_11_validation_perturbations_20261016T140605757621Z/turn_removal_25_seed44_per_query.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "accepted",
+        "fallback",
+        "condition",
+        "family",
+        "level",
+        "seed",
+        "perturbed_text",
+        "changed",
+        "original_characters",
+        "perturbed_characters",
+        "clean_correct",
+        "clean_CRUS",
+        "delta_CRUS",
+        "transition",
+        "original_turns",
+        "retained_turns",
+        "removed_turns",
+        "realized_turn_removal_rate"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_12_calibration_20261016T142502223934Z/RUN_COMPLETE.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "completed_methods"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_12_calibration_20261016T142502223934Z/analysis_metadata.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "analysis",
+        "evaluation_split",
+        "posthoc_fitting_split",
+        "posthoc_method",
+        "temperature_bounds",
+        "objective",
+        "probability_floor",
+        "Brier_definition",
+        "ECE_definition",
+        "NLL_definition",
+        "acceptance",
+        "original_SVM",
+        "retrieval_only",
+        "interpretation",
+        "analysis_status",
+        "input_hashes"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_12_calibration_20261016T142502223934Z/test_calibration_metrics.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "method",
+        "probability_variant",
+        "subset",
+        "n",
+        "accuracy",
+        "ECE",
+        "Brier",
+        "NLL",
+        "zero_true_label_probabilities",
+        "coverage",
+        "status"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_12_calibration_20261016T142502223934Z/test_reliability_bins.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "method",
+        "probability_variant",
+        "subset",
+        "bin",
+        "lower",
+        "upper",
+        "upper_inclusive",
+        "count",
+        "accuracy",
+        "mean_confidence"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_12_calibration_20261016T142502223934Z/validation_temperature_parameters.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "method",
+        "temperature",
+        "near_search_boundary",
+        "validation_NLL_original",
+        "validation_NLL_temperature_scaled"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_13_class_deferral_20261016T143807313869Z/overall_summary.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "test_n",
+        "accepted_n",
+        "deferred_n",
+        "coverage",
+        "abstention_rate",
+        "forced_error_rate",
+        "accepted_error_rate",
+        "deferred_error_rate",
+        "deferred_correct_n"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_13_class_deferral_20261016T143807313869Z/per_class_deferral_audit.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "class",
+        "train_n",
+        "validation_n",
+        "test_n",
+        "accepted_n",
+        "deferred_n",
+        "coverage",
+        "abstention_rate",
+        "forced_errors_n",
+        "forced_error_rate",
+        "accepted_errors_n",
+        "accepted_error_rate",
+        "deferred_errors_n",
+        "deferred_error_rate",
+        "deferred_correct_n",
+        "deferred_correct_fraction",
+        "mean_CRUS",
+        "deferral_rate_ratio_vs_overall",
+        "share_of_all_deferrals"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_13_class_deferral_20261016T143807313869Z/per_query_deferral_audit.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "method",
+        "CRUS",
+        "confidence",
+        "tau_c",
+        "tau_u",
+        "accepted",
+        "correct",
+        "label",
+        "deferred",
+        "error"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_15_candidate_selection_20261016T150259333685Z/RUN_COMPLETE.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "completed_queries"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_15_candidate_selection_20261016T150259333685Z/analysis_metadata.json",
+    "extension": ".json",
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "analysis",
+        "partition",
+        "configuration",
+        "uncertainty_configuration",
+        "baseline_reproduced",
+        "balanced_rule",
+        "fixed",
+        "test_predictions_used",
+        "true_query_labels_used_for_selection",
+        "rejection_thresholds_evaluated",
+        "limitations"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_15_candidate_selection_20261016T150259333685Z/paired_differences.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "selection_changed",
+        "transition",
+        "delta_H_pred",
+        "delta_H_retrieval",
+        "delta_V_RRF",
+        "delta_CRUS"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_15_candidate_selection_20261016T150259333685Z/per_query_results.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "record_id",
+        "policy",
+        "true_label",
+        "prediction",
+        "correct",
+        "confidence",
+        "H_pred",
+        "H_retrieval",
+        "V_RRF",
+        "CRUS",
+        "eligible_documents_n",
+        "selected_documents_n",
+        "represented_labels_n",
+        "selection_changed",
+        "fallback",
+        "selected_training_ids"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_15_candidate_selection_20261016T150259333685Z/policy_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "policy",
+        "n",
+        "accuracy",
+        "macro_f1",
+        "mean_H_pred",
+        "mean_H_retrieval",
+        "mean_V_RRF",
+        "mean_CRUS",
+        "mean_selected_documents",
+        "mean_represented_labels",
+        "changed_queries_n"
+      ]
+    },
+    "error": null
+  },
+  {
+    "source_relative_path": "r1_15_candidate_selection_20261016T150259333685Z/transition_summary.csv",
+    "extension": ".csv",
+    "schema": {
+      "columns": [
+        "transition",
+        "n",
+        "mean_delta_H_pred",
+        "mean_delta_H_retrieval",
+        "mean_delta_CRUS"
+      ]
+    },
+    "error": null
+  }
+]

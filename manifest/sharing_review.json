@@ -1,0 +1,55 @@
+{
+  "review_date_local": "2026-11-11",
+  "scope": "Documented screening follow-up and uploader confirmations",
+  "uploader_statement": "Sharing permissions reviewed?no unresolved restrictions.",
+  "sharing_permissions_reported_reviewed": true,
+  "unresolved_distribution_restrictions_reported": false,
+  "reviewed_files": [
+    {
+      "path": "regenerated/editor_comment2_consistency_20261109T105325440181Z/risk_coverage_verified.png",
+      "sha256": "9d8054b8f788efe7a29710197eab55674b01cdd6e7f2aeaa06294641c56549d7",
+      "review": "Uploader reported visual review with no identifying or confidential-content concerns."
+    },
+    {
+      "path": "regenerated/editor_comment2_consistency_20261109T105325440181Z/risk_coverage_verified.pdf",
+      "sha256": "829c5af3243d40838e75fbfefe326629fe4d690bf302ba8c6e7cf1b850318b79",
+      "review": "Uploader reported visual review with no identifying or confidential-content concerns."
+    },
+    {
+      "path": "revision_updates/editor_comment2_consistency_20261029T074417157641Z/risk_coverage_verified.png",
+      "sha256": "a225df27a801cd6f7aea890063a5b3b6c7fe301fea13ee3e3591a6846ff1bdf0",
+      "review": "Uploader reported visual review with no identifying or confidential-content concerns."
+    },
+    {
+      "path": "revision_updates/editor_comment2_consistency_20261029T074417157641Z/risk_coverage_verified.pdf",
+      "sha256": "0d3199e5298ef94633f01ec087270f67863b577d514fb92f8847e416316b838e",
+      "review": "Uploader reported visual review with no identifying or confidential-content concerns."
+    },
+    {
+      "path": "regenerated/editor_table13_final_cohort_20261109T105121093621Z/table13_replacement.tex",
+      "sha256": "6d120410af92b67b0aff29b4dadf7d94770df6d274196df6a287ccd93d24f7ff",
+      "review": "Uploader supplied the two table-source contents in conversation; the displayed contents contained aggregate research results and LaTeX formatting."
+    },
+    {
+      "path": "revision_updates/editor_table13_final_cohort_20261029T070537486427Z/table13_replacement.tex",
+      "sha256": "6900e19d5f57e0446da85e0240ee127fc9c7fa6844ff2195d8d6cc2f97e092ca",
+      "review": "Uploader supplied the two table-source contents in conversation; the displayed contents contained aggregate research results and LaTeX formatting."
+    }
+  ],
+  "screening_followup": {
+    "two_explanatory_json_notes": "Matched expected metadata",
+    "prediction_jsonl": {
+      "records": 386,
+      "matched_inspected_source_copy": true,
+      "sha256": "785a90593f2025b6e3f6c3f1a38c5f0a82f0a8e688bda13d5df81ee2b4f9222a"
+    }
+  },
+  "limits": {
+    "institutional_privacy_certification_asserted": false,
+    "exhaustive_automated_disclosure_review_asserted": false,
+    "independent_legal_clearance_asserted": false,
+    "full_training_inference_reproduction_verified": false,
+    "online_publication_verified_by_this_record": false
+  },
+  "historical_status_records_modified": false
+}

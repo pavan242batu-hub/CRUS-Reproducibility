@@ -1,0 +1,14 @@
+[
+  {
+    "source_relative_path": "source_data/source_manifest.json",
+    "package_path": "artifacts/source_data/source_manifest.json",
+    "operation": "unchanged_copy",
+    "sha256": "fb988cad93f9be9f1ecfc2ee1a0b6eae51b2521927d6b41afeb8e0089c29de90"
+  },
+  {
+    "source_relative_path": "additional_mts_heldout_audit_20261017T085443976861Z/download_provenance.json",
+    "package_path": "artifacts/additional_mts_heldout_audit_20261017T085443976861Z/download_provenance.json",
+    "operation": "unchanged_copy",
+    "sha256": "332c5126785e43bc60a8d84a6b78d73dd0df31b3aff77236e47f071c409b1199"
+  }
+]

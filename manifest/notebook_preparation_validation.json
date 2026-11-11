@@ -1,0 +1,61 @@
+{
+  "scope": "Notebook preparation and limited setup-helper verification only",
+  "verification_date_local": "2026-11-11",
+  "notebooks": [
+    {
+      "path": "notebooks/CRUS_R1_5_External_Transfer.ipynb",
+      "sha256": "304f87229c3f67e6de340a9a7fe314971217a37962b09603613ad1ada3075a24",
+      "total_cells": 334,
+      "nonempty_code_cells": 324,
+      "preparation_checks_reported_passed": true,
+      "limited_setup_helper_execution": "PASS",
+      "full_notebook_execution_verified": false,
+      "fresh_training_or_inference_verified": false,
+      "remaining_saved_outputs": "historical; not regenerated"
+    },
+    {
+      "path": "notebooks/revised_risk_aware_hybrid_pipeline_v2.ipynb",
+      "sha256": "1117a108f6be534a5a0a09228e95a1c183a118b60f27eb93bcba5c93bd8dc896",
+      "total_cells": 253,
+      "nonempty_code_cells": 244,
+      "preparation_checks_reported_passed": true,
+      "limited_setup_helper_execution": "PASS",
+      "full_notebook_execution_verified": false,
+      "fresh_training_or_inference_verified": false,
+      "remaining_saved_outputs": "historical; not regenerated"
+    }
+  ],
+  "release_guides": [
+    "notebooks/EXTERNAL_TRANSFER_RELEASE_GUIDE.md",
+    "notebooks/PIPELINE_RELEASE_GUIDE.md"
+  ],
+  "archived_artifact_checksum_verification": {
+    "result": "PASS",
+    "unique_files": 260,
+    "archived_files_modified": false
+  },
+  "primary_evidence_consistency": {
+    "result": "PASS",
+    "records": 1288,
+    "groups": 1285,
+    "cross_split_groups": 0,
+    "split_sizes": {
+      "train": 773,
+      "validation": 258,
+      "test": 257
+    },
+    "prediction_rows": 2313,
+    "native_crus_accepted_test_counts": {
+      "SingleStageFull": 118,
+      "SingleStageTruncated": 115,
+      "Cascade": 117,
+      "LengthNormLegacy": 113
+    }
+  },
+  "manual_sharing_review_completed_by_these_checks": false,
+  "complete_environment_lock_verified": false,
+  "full_scientific_workflow_portability_verified": false,
+  "online_publication_verified_by_these_checks": false,
+  "historical_status_records_modified": false,
+  "note": "Source comparisons and runtime setup tests have the limited scope documented in the release guides. They are not proof of historical execution provenance or complete manuscript reproduction."
+}

@@ -1,0 +1,815 @@
+[
+  {
+    "run": "primary",
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/RUN_COMPLETE.json",
+    "bytes": 286,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "split",
+        "method",
+        "configuration_sha256",
+        "matched_retained_count",
+        "metric_summary_sha256"
+      ]
+    }
+  },
+  {
+    "run": "primary",
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+    "bytes": 1534,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "batch_size",
+        "classes",
+        "device",
+        "encoder_roles",
+        "index",
+        "input",
+        "input_hashes",
+        "max_length_tokens",
+        "method",
+        "model_id",
+        "model_revision",
+        "model_seed",
+        "prediction",
+        "probability_model",
+        "representation",
+        "similarity",
+        "split",
+        "tie_breaking",
+        "torch_version",
+        "transformers_version"
+      ]
+    }
+  },
+  {
+    "run": "primary",
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/metric_summary.csv",
+    "bytes": 680,
+    "schema": {
+      "columns": [
+        "method",
+        "split",
+        "mode",
+        "N",
+        "n_accepted",
+        "n_correct_accepted",
+        "n_errors_accepted",
+        "n_abstained",
+        "coverage",
+        "forced_accuracy",
+        "selective_accuracy",
+        "macro_f1",
+        "weighted_f1",
+        "kappa",
+        "ece",
+        "brier",
+        "nll"
+      ]
+    }
+  },
+  {
+    "run": "primary",
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/prediction_audit.csv",
+    "bytes": 99247,
+    "schema": {
+      "columns": [
+        "split",
+        "record_id",
+        "group_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "top_inner_product",
+        "retrieved_training_record_id"
+      ]
+    }
+  },
+  {
+    "run": "primary",
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "bytes": 5772,
+    "schema": null
+  },
+  {
+    "run": "primary",
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/test_matched_selection.csv",
+    "bytes": 9455,
+    "schema": {
+      "columns": [
+        "record_id",
+        "retained"
+      ]
+    }
+  },
+  {
+    "run": "primary",
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/training_embeddings.npz",
+    "bytes": 2205818,
+    "schema": null
+  },
+  {
+    "run": "primary",
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/truncation_diagnostics.csv",
+    "bytes": 256,
+    "schema": {
+      "columns": [
+        "split",
+        "n_records",
+        "max_length_tokens",
+        "n_truncated",
+        "fraction_truncated",
+        "median_original_tokens",
+        "maximum_original_tokens"
+      ]
+    }
+  },
+  {
+    "run": "primary",
+    "source_relative_path": "corrected_experiment_outputs/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "bytes": 5742,
+    "schema": null
+  },
+  {
+    "run": "seed_11",
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/RUN_COMPLETE.json",
+    "bytes": 272,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "split_seed",
+        "method",
+        "configuration_sha256",
+        "matched_retained_count",
+        "metric_summary_sha256"
+      ]
+    }
+  },
+  {
+    "run": "seed_11",
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+    "bytes": 1486,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "batch_size",
+        "classes",
+        "device",
+        "encoder_roles",
+        "index",
+        "input",
+        "input_hashes",
+        "max_length_tokens",
+        "method",
+        "model_id",
+        "model_revision",
+        "model_seed",
+        "prediction",
+        "probability_model",
+        "python_version",
+        "representation",
+        "similarity",
+        "sklearn_version",
+        "split_seed",
+        "tie_breaking",
+        "torch_version",
+        "transformers_version"
+      ]
+    }
+  },
+  {
+    "run": "seed_11",
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/metric_summary.csv",
+    "bytes": 688,
+    "schema": {
+      "columns": [
+        "split_seed",
+        "method",
+        "split",
+        "mode",
+        "N",
+        "n_accepted",
+        "n_correct_accepted",
+        "n_errors_accepted",
+        "n_abstained",
+        "coverage",
+        "forced_accuracy",
+        "selective_accuracy",
+        "macro_f1",
+        "weighted_f1",
+        "kappa",
+        "ece",
+        "brier",
+        "nll"
+      ]
+    }
+  },
+  {
+    "run": "seed_11",
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/prediction_audit.csv",
+    "bytes": 99081,
+    "schema": {
+      "columns": [
+        "split",
+        "record_id",
+        "group_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "top_inner_product",
+        "retrieved_training_record_id"
+      ]
+    }
+  },
+  {
+    "run": "seed_11",
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "bytes": 5778,
+    "schema": null
+  },
+  {
+    "run": "seed_11",
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/test_matched_selection.csv",
+    "bytes": 9442,
+    "schema": {
+      "columns": [
+        "record_id",
+        "retained"
+      ]
+    }
+  },
+  {
+    "run": "seed_11",
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/training_embeddings.npz",
+    "bytes": 2205640,
+    "schema": null
+  },
+  {
+    "run": "seed_11",
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/truncation_diagnostics.csv",
+    "bytes": 255,
+    "schema": {
+      "columns": [
+        "split",
+        "n_records",
+        "max_length_tokens",
+        "n_truncated",
+        "fraction_truncated",
+        "median_original_tokens",
+        "maximum_original_tokens"
+      ]
+    }
+  },
+  {
+    "run": "seed_11",
+    "source_relative_path": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "bytes": 5796,
+    "schema": null
+  },
+  {
+    "run": "seed_22",
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/RUN_COMPLETE.json",
+    "bytes": 272,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "split_seed",
+        "method",
+        "configuration_sha256",
+        "matched_retained_count",
+        "metric_summary_sha256"
+      ]
+    }
+  },
+  {
+    "run": "seed_22",
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+    "bytes": 1486,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "batch_size",
+        "classes",
+        "device",
+        "encoder_roles",
+        "index",
+        "input",
+        "input_hashes",
+        "max_length_tokens",
+        "method",
+        "model_id",
+        "model_revision",
+        "model_seed",
+        "prediction",
+        "probability_model",
+        "python_version",
+        "representation",
+        "similarity",
+        "sklearn_version",
+        "split_seed",
+        "tie_breaking",
+        "torch_version",
+        "transformers_version"
+      ]
+    }
+  },
+  {
+    "run": "seed_22",
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/metric_summary.csv",
+    "bytes": 694,
+    "schema": {
+      "columns": [
+        "split_seed",
+        "method",
+        "split",
+        "mode",
+        "N",
+        "n_accepted",
+        "n_correct_accepted",
+        "n_errors_accepted",
+        "n_abstained",
+        "coverage",
+        "forced_accuracy",
+        "selective_accuracy",
+        "macro_f1",
+        "weighted_f1",
+        "kappa",
+        "ece",
+        "brier",
+        "nll"
+      ]
+    }
+  },
+  {
+    "run": "seed_22",
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/prediction_audit.csv",
+    "bytes": 99411,
+    "schema": {
+      "columns": [
+        "split",
+        "record_id",
+        "group_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "top_inner_product",
+        "retrieved_training_record_id"
+      ]
+    }
+  },
+  {
+    "run": "seed_22",
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "bytes": 5760,
+    "schema": null
+  },
+  {
+    "run": "seed_22",
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/test_matched_selection.csv",
+    "bytes": 9435,
+    "schema": {
+      "columns": [
+        "record_id",
+        "retained"
+      ]
+    }
+  },
+  {
+    "run": "seed_22",
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/training_embeddings.npz",
+    "bytes": 2205916,
+    "schema": null
+  },
+  {
+    "run": "seed_22",
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/truncation_diagnostics.csv",
+    "bytes": 255,
+    "schema": {
+      "columns": [
+        "split",
+        "n_records",
+        "max_length_tokens",
+        "n_truncated",
+        "fraction_truncated",
+        "median_original_tokens",
+        "maximum_original_tokens"
+      ]
+    }
+  },
+  {
+    "run": "seed_22",
+    "source_relative_path": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "bytes": 5734,
+    "schema": null
+  },
+  {
+    "run": "seed_33",
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/RUN_COMPLETE.json",
+    "bytes": 272,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "split_seed",
+        "method",
+        "configuration_sha256",
+        "matched_retained_count",
+        "metric_summary_sha256"
+      ]
+    }
+  },
+  {
+    "run": "seed_33",
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+    "bytes": 1486,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "batch_size",
+        "classes",
+        "device",
+        "encoder_roles",
+        "index",
+        "input",
+        "input_hashes",
+        "max_length_tokens",
+        "method",
+        "model_id",
+        "model_revision",
+        "model_seed",
+        "prediction",
+        "probability_model",
+        "python_version",
+        "representation",
+        "similarity",
+        "sklearn_version",
+        "split_seed",
+        "tie_breaking",
+        "torch_version",
+        "transformers_version"
+      ]
+    }
+  },
+  {
+    "run": "seed_33",
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/metric_summary.csv",
+    "bytes": 692,
+    "schema": {
+      "columns": [
+        "split_seed",
+        "method",
+        "split",
+        "mode",
+        "N",
+        "n_accepted",
+        "n_correct_accepted",
+        "n_errors_accepted",
+        "n_abstained",
+        "coverage",
+        "forced_accuracy",
+        "selective_accuracy",
+        "macro_f1",
+        "weighted_f1",
+        "kappa",
+        "ece",
+        "brier",
+        "nll"
+      ]
+    }
+  },
+  {
+    "run": "seed_33",
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/prediction_audit.csv",
+    "bytes": 99240,
+    "schema": {
+      "columns": [
+        "split",
+        "record_id",
+        "group_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "top_inner_product",
+        "retrieved_training_record_id"
+      ]
+    }
+  },
+  {
+    "run": "seed_33",
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "bytes": 5714,
+    "schema": null
+  },
+  {
+    "run": "seed_33",
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/test_matched_selection.csv",
+    "bytes": 9448,
+    "schema": {
+      "columns": [
+        "record_id",
+        "retained"
+      ]
+    }
+  },
+  {
+    "run": "seed_33",
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/training_embeddings.npz",
+    "bytes": 2205678,
+    "schema": null
+  },
+  {
+    "run": "seed_33",
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/truncation_diagnostics.csv",
+    "bytes": 257,
+    "schema": {
+      "columns": [
+        "split",
+        "n_records",
+        "max_length_tokens",
+        "n_truncated",
+        "fraction_truncated",
+        "median_original_tokens",
+        "maximum_original_tokens"
+      ]
+    }
+  },
+  {
+    "run": "seed_33",
+    "source_relative_path": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "bytes": 5770,
+    "schema": null
+  },
+  {
+    "run": "seed_44",
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/RUN_COMPLETE.json",
+    "bytes": 272,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "split_seed",
+        "method",
+        "configuration_sha256",
+        "matched_retained_count",
+        "metric_summary_sha256"
+      ]
+    }
+  },
+  {
+    "run": "seed_44",
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+    "bytes": 1486,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "batch_size",
+        "classes",
+        "device",
+        "encoder_roles",
+        "index",
+        "input",
+        "input_hashes",
+        "max_length_tokens",
+        "method",
+        "model_id",
+        "model_revision",
+        "model_seed",
+        "prediction",
+        "probability_model",
+        "python_version",
+        "representation",
+        "similarity",
+        "sklearn_version",
+        "split_seed",
+        "tie_breaking",
+        "torch_version",
+        "transformers_version"
+      ]
+    }
+  },
+  {
+    "run": "seed_44",
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/metric_summary.csv",
+    "bytes": 699,
+    "schema": {
+      "columns": [
+        "split_seed",
+        "method",
+        "split",
+        "mode",
+        "N",
+        "n_accepted",
+        "n_correct_accepted",
+        "n_errors_accepted",
+        "n_abstained",
+        "coverage",
+        "forced_accuracy",
+        "selective_accuracy",
+        "macro_f1",
+        "weighted_f1",
+        "kappa",
+        "ece",
+        "brier",
+        "nll"
+      ]
+    }
+  },
+  {
+    "run": "seed_44",
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/prediction_audit.csv",
+    "bytes": 99178,
+    "schema": {
+      "columns": [
+        "split",
+        "record_id",
+        "group_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "top_inner_product",
+        "retrieved_training_record_id"
+      ]
+    }
+  },
+  {
+    "run": "seed_44",
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "bytes": 5758,
+    "schema": null
+  },
+  {
+    "run": "seed_44",
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/test_matched_selection.csv",
+    "bytes": 9447,
+    "schema": {
+      "columns": [
+        "record_id",
+        "retained"
+      ]
+    }
+  },
+  {
+    "run": "seed_44",
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/training_embeddings.npz",
+    "bytes": 2205701,
+    "schema": null
+  },
+  {
+    "run": "seed_44",
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/truncation_diagnostics.csv",
+    "bytes": 259,
+    "schema": {
+      "columns": [
+        "split",
+        "n_records",
+        "max_length_tokens",
+        "n_truncated",
+        "fraction_truncated",
+        "median_original_tokens",
+        "maximum_original_tokens"
+      ]
+    }
+  },
+  {
+    "run": "seed_44",
+    "source_relative_path": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "bytes": 5732,
+    "schema": null
+  },
+  {
+    "run": "seed_55",
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/RUN_COMPLETE.json",
+    "bytes": 272,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "split_seed",
+        "method",
+        "configuration_sha256",
+        "matched_retained_count",
+        "metric_summary_sha256"
+      ]
+    }
+  },
+  {
+    "run": "seed_55",
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+    "bytes": 1486,
+    "schema": {
+      "type": "dict",
+      "top_level_keys": [
+        "batch_size",
+        "classes",
+        "device",
+        "encoder_roles",
+        "index",
+        "input",
+        "input_hashes",
+        "max_length_tokens",
+        "method",
+        "model_id",
+        "model_revision",
+        "model_seed",
+        "prediction",
+        "probability_model",
+        "python_version",
+        "representation",
+        "similarity",
+        "sklearn_version",
+        "split_seed",
+        "tie_breaking",
+        "torch_version",
+        "transformers_version"
+      ]
+    }
+  },
+  {
+    "run": "seed_55",
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/metric_summary.csv",
+    "bytes": 685,
+    "schema": {
+      "columns": [
+        "split_seed",
+        "method",
+        "split",
+        "mode",
+        "N",
+        "n_accepted",
+        "n_correct_accepted",
+        "n_errors_accepted",
+        "n_abstained",
+        "coverage",
+        "forced_accuracy",
+        "selective_accuracy",
+        "macro_f1",
+        "weighted_f1",
+        "kappa",
+        "ece",
+        "brier",
+        "nll"
+      ]
+    }
+  },
+  {
+    "run": "seed_55",
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/prediction_audit.csv",
+    "bytes": 99363,
+    "schema": {
+      "columns": [
+        "split",
+        "record_id",
+        "group_id",
+        "true_label",
+        "prediction",
+        "correct",
+        "top_inner_product",
+        "retrieved_training_record_id"
+      ]
+    }
+  },
+  {
+    "run": "seed_55",
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/test_MedCPT_Query_arrays.npz",
+    "bytes": 5724,
+    "schema": null
+  },
+  {
+    "run": "seed_55",
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/test_matched_selection.csv",
+    "bytes": 9430,
+    "schema": {
+      "columns": [
+        "record_id",
+        "retained"
+      ]
+    }
+  },
+  {
+    "run": "seed_55",
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/training_embeddings.npz",
+    "bytes": 2205670,
+    "schema": null
+  },
+  {
+    "run": "seed_55",
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/truncation_diagnostics.csv",
+    "bytes": 257,
+    "schema": {
+      "columns": [
+        "split",
+        "n_records",
+        "max_length_tokens",
+        "n_truncated",
+        "fraction_truncated",
+        "median_original_tokens",
+        "maximum_original_tokens"
+      ]
+    }
+  },
+  {
+    "run": "seed_55",
+    "source_relative_path": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/validation_MedCPT_Query_arrays.npz",
+    "bytes": 5640,
+    "schema": null
+  }
+]
