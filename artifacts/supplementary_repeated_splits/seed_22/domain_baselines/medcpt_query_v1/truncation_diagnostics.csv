@@ -1,0 +1,4 @@
+split,n_records,max_length_tokens,n_truncated,fraction_truncated,median_original_tokens,maximum_original_tokens
+train,773,256,123,0.1591203104786546,88.0,2043
+validation,258,256,43,0.16666666666666666,99.0,923
+test,257,256,52,0.20233463035019456,98.0,845
