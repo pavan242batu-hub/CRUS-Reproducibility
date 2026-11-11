@@ -1,0 +1,17 @@
+{
+  "split_seed": 55,
+  "protocol_sha256": "d54b930c10303c1cb68eea1c536c985131230c47ecbc6051708444c40a463908",
+  "methods": [
+    "TFIDF_LR",
+    "TFIDF_SVM",
+    "BM25",
+    "SBERT",
+    "SK4",
+    "SingleStageFull",
+    "SingleStageTruncated",
+    "Cascade",
+    "LengthNormLegacy"
+  ],
+  "test_records": 257,
+  "matched_retained_count": 125
+}
