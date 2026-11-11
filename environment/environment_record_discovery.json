@@ -1,0 +1,81 @@
+{
+  "scope": "Environment-record discovery; values not verified",
+  "json_key_matches": [
+    {
+      "file": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "python_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_11/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "torch_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_11/experiment_outputs/retrieval_initialization_metadata.json",
+      "key": "package_versions",
+      "value_type": "dict"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "python_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_22/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "torch_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_22/experiment_outputs/retrieval_initialization_metadata.json",
+      "key": "package_versions",
+      "value_type": "dict"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "python_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_33/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "torch_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_33/experiment_outputs/retrieval_initialization_metadata.json",
+      "key": "package_versions",
+      "value_type": "dict"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "python_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_44/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "torch_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_44/experiment_outputs/retrieval_initialization_metadata.json",
+      "key": "package_versions",
+      "value_type": "dict"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "python_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_55/domain_baselines/medcpt_query_v1/baseline_configuration.json",
+      "key": "torch_version",
+      "value_type": "str"
+    },
+    {
+      "file": "supplementary_repeated_splits/seed_55/experiment_outputs/retrieval_initialization_metadata.json",
+      "key": "package_versions",
+      "value_type": "dict"
+    }
+  ],
+  "dependency_files": []
+}
