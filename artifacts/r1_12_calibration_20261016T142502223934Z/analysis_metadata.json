@@ -1,0 +1,37 @@
+{
+  "analysis": "R1.12 calibration clarification",
+  "evaluation_split": "test",
+  "posthoc_fitting_split": "validation only",
+  "posthoc_method": "single scalar temperature per method",
+  "temperature_bounds": [
+    0.05,
+    20.0
+  ],
+  "objective": "validation multiclass NLL",
+  "probability_floor": 1e-12,
+  "Brier_definition": "mean sum over classes of squared probability errors",
+  "ECE_definition": "top-label ECE; 10 equal-width bins; include confidence=1",
+  "NLL_definition": "mean negative log true-class probability after flooring and renormalization",
+  "acceptance": "original frozen masks retained for both probability variants",
+  "original_SVM": "training-only grouped sigmoid calibration; not validation-only",
+  "retrieval_only": "BM25/SBERT metrics unavailable, not zero",
+  "interpretation": "accepted-subset calibration is conditional on selection",
+  "analysis_status": "additional revision-stage analysis, not replacement of original models",
+  "input_hashes": {
+    "corrected_experiment_outputs/final_pretest_protocol.json": "ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f",
+    "corrected_experiment_outputs/validation_TFIDF_LR_probabilities.npz": "ed86fabfb5f2b9fdc04052ca01a8d4417f4c15aa56516270cd36520efd662f06",
+    "corrected_experiment_outputs/test_TFIDF_LR_arrays.npz": "c36903cd0d065e88c645361be20d36d6c2545148c593d0f9b2c12216804dd0bf",
+    "corrected_experiment_outputs/validation_TFIDF_SVM_probabilities.npz": "853ec367c9c143486684109ea0e9efacd18a8e09cd9e06374078f1dfd4d46198",
+    "corrected_experiment_outputs/test_TFIDF_SVM_arrays.npz": "ab8f5be3a4bd44487ba596c196175661b80e8b5060a4ee73b7ca0f76162b5801",
+    "corrected_experiment_outputs/validation_SK4_arrays.npz": "2e7938220316eca9fe919e33f3803585c134477603ef1dec868e6c8ffb42c88e",
+    "corrected_experiment_outputs/test_SK4_arrays.npz": "ea81d264c395f4485ce760227bf339691efae76df67843f29afd761b750e286a",
+    "corrected_experiment_outputs/validation_SingleStageFull_arrays.npz": "9d5d8be249241119ae68bf6718f2e0a4f3197d4b8edd393250534cd18e1ece5b",
+    "corrected_experiment_outputs/test_SingleStageFull_arrays.npz": "af5a7055564f4f813ceca9cb3b20cae0446f0dfe6014edf2ba69ec20e0c0b0ac",
+    "corrected_experiment_outputs/validation_SingleStageTruncated_arrays.npz": "8af73957e1cc335284fff844b2b36ae3c256011ba33983b3afca1b06e295b34d",
+    "corrected_experiment_outputs/test_SingleStageTruncated_arrays.npz": "aeda357ec42dc6830cf68e1ce86db14268736ea6a3d0b6e1d715c5e3d5aa1517",
+    "corrected_experiment_outputs/validation_Cascade_arrays.npz": "7f5319f7fb485624b21569cd96fb9c80e59936717598593b1a52c5ef0f639c87",
+    "corrected_experiment_outputs/test_Cascade_arrays.npz": "c482a3900dcc7b49d3a306f44aff275fe63ec572f6ca7df0bee21a01ebaa0884",
+    "corrected_experiment_outputs/validation_LengthNormLegacy_arrays.npz": "d1d703be98a4d867196717e0d845d09de46ed75beff3ac7c350efdcaaf5948a8",
+    "corrected_experiment_outputs/test_LengthNormLegacy_arrays.npz": "11e77776558db01cd9b6bd89e5aa3eeba44a3cb6bf9758aff2202f9410a63e20"
+  }
+}

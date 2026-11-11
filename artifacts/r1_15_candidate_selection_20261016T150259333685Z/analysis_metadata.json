@@ -1,0 +1,49 @@
+{
+  "analysis": "R1.15 MMRAG-inspired candidate-selection ablation",
+  "partition": "constrained validation",
+  "configuration": {
+    "seed": 42,
+    "bm25_k1": 1.5,
+    "bm25_b": 0.75,
+    "topk_retrieve": 20,
+    "rrf_k": 60,
+    "rrf_top_n": 10,
+    "cascade_top_k_classes": 5,
+    "doc_truncate_chars": 400,
+    "length_norm_alpha": 0.5,
+    "dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "ce_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "ce_max_tokens": 512,
+    "batch_size": 16
+  },
+  "uncertainty_configuration": {
+    "weights": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "weight_policy": "fixed heuristic; not optimized",
+    "variance_epsilon": 1e-10,
+    "variance_ddof": 0,
+    "variance_stage": "final document set used for CE aggregation"
+  },
+  "baseline_reproduced": true,
+  "balanced_rule": "Round-robin over labels ordered by their first occurrence in the relevance-ranked eligible pool; relevance order within labels; restore original order after selection.",
+  "fixed": [
+    "training index",
+    "initial fused pool",
+    "candidate shortlist",
+    "per-query document count",
+    "cross-encoder",
+    "truncation",
+    "uncertainty definitions and weights"
+  ],
+  "test_predictions_used": false,
+  "true_query_labels_used_for_selection": false,
+  "rejection_thresholds_evaluated": false,
+  "limitations": [
+    "Not a reproduction of MMRAG retrieval modes",
+    "Class balancing restricted to labels in the eligible pool",
+    "Descriptive validation ablation; no significance tests"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "test_n": 257,
+  "accepted_n": 117,
+  "deferred_n": 140,
+  "coverage": 0.45525291828793774,
+  "abstention_rate": 0.5447470817120622,
+  "forced_error_rate": 0.29571984435797666,
+  "accepted_error_rate": 0.06837606837606838,
+  "deferred_error_rate": 0.4857142857142857,
+  "deferred_correct_n": 72
+}

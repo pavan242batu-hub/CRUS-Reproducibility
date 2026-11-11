@@ -1,0 +1,48 @@
+{
+  "evaluation_type": "exploratory_additional_MTS_Dialog_testing",
+  "independent_cross_dataset_validation": false,
+  "historical_development_non_use_verified": false,
+  "provenance_and_semantic_overlap_review_completed": false,
+  "selection": "Supported labels; exclude blank dialogues, exact source overlaps, all repeated-dialogue group members, and records flagged by the completed near-source screen.",
+  "downloaded_records": 400,
+  "selected_records": 386,
+  "source_training_records": 773,
+  "classes_in_probability_order": [
+    "ALLERGY",
+    "ASSESSMENT",
+    "CC",
+    "DIAGNOSIS",
+    "DISPOSITION",
+    "EDCOURSE",
+    "EXAM",
+    "FAM/SOCHX",
+    "GENHX",
+    "GYNHX",
+    "IMAGING",
+    "IMMUNIZATIONS",
+    "MEDICATIONS",
+    "PASTMEDICALHX",
+    "PASTSURGICAL",
+    "PLAN",
+    "ROS"
+  ],
+  "tau_c": 0.0,
+  "tau_u": 0.128165036474669,
+  "crus_weights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "device": "cpu",
+  "loaded_revisions": {
+    "dense_model_commit": null,
+    "cross_encoder_commit": null
+  },
+  "scorer_source_sha256": "ad2a527bf9b4e95e76ec8be51881bf23bd14b8a3204309ca1824b2bd119e9291",
+  "source_regression_directory": "/content/drive/MyDrive/RiskAware_Revision2/r1_5_source_reverification_20261017T093849452487Z",
+  "source_regression_summary_sha256": "41ce498cd62065a14e9b965365cf42ed2b54ba48dcf3e5a565ca616d85317a62",
+  "screening_audit_sha256": "584b0c27bc5be214e2b4217022b6c339ecefb6ade75745f00213f82b2e740d8c",
+  "inference_inputs_sha256": "d3bac1dca3561b6b21d1ca09170f12055d0837bbb838b51aa09666b2ca0577b9",
+  "evaluation_reference_sha256": "abac16061c5a2dabe79e3a442915b601a3e5d9d5c1509fb4cc72b35250fb51da",
+  "created_utc": "2026-10-17T10:11:58.905394+00:00"
+}

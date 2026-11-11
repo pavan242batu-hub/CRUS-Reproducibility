@@ -1,0 +1,19 @@
+{
+  "AURC": "mean prefix risk over k=1,...,N",
+  "confidence_intervals": "not computed",
+  "frozen_weight_policies_sha256": "a4fc69a3f68c9935cd324b84716ee8bdd0cf0c9663151c9b77d886a21207a41c",
+  "matched_count": "original frozen CRUS gate's test retained count within each split",
+  "original_results": "preserved; sensitivity analysis only",
+  "ranking": "uncertainty ascending; record ID ascending for ties",
+  "repeat_sd": "sample standard deviation, ddof=1",
+  "selection": "weights and thresholds frozen before this evaluation",
+  "test_input_hashes": {
+    "corrected_experiment_outputs/test_Cascade_arrays.npz": "c482a3900dcc7b49d3a306f44aff275fe63ec572f6ca7df0bee21a01ebaa0884",
+    "supplementary_repeated_splits/seed_11/experiment_outputs/test_Cascade_arrays.npz": "e90d3bb437b003ee44d32b56af5d3449a30137c531f583d784633aed2de49fd6",
+    "supplementary_repeated_splits/seed_22/experiment_outputs/test_Cascade_arrays.npz": "1ec5ad55c8214c5f4a24f613f2844645d1ae2fc710ae77623617110334c25986",
+    "supplementary_repeated_splits/seed_33/experiment_outputs/test_Cascade_arrays.npz": "cbf724dc7d31588f22ecbb66fc71c198871f5e265adabd41607f061e84b9d857",
+    "supplementary_repeated_splits/seed_44/experiment_outputs/test_Cascade_arrays.npz": "5afadbe27a9db71686cc5633b60cf36b493f26ae31fc51e98ece789d61112f0b",
+    "supplementary_repeated_splits/seed_55/experiment_outputs/test_Cascade_arrays.npz": "db8634cd426055c27b963e31731b962a77ed8c915416016cb98df2ef05f40122"
+  },
+  "validation_search_metadata_sha256": "784c888a896117d4a80f8eb6383f297759b22c710794b1b48003e61ed3c44090"
+}

@@ -1,0 +1,208 @@
+{
+  "AURC": "mean prefix risk for retained counts k=1,...,N",
+  "CRUS": "components @ weights from each saved protocol",
+  "PR_metrics": [
+    "average precision",
+    "trapezoidal area under precision-recall curve"
+  ],
+  "calibrated_comparator": {
+    "C": 1.0,
+    "conformal_method": false,
+    "fit_data": "validation only",
+    "guaranteed_calibration": false,
+    "model": "StandardScaler + LogisticRegression",
+    "target": "correctness of fixed Cascade prediction",
+    "test_tuning": false
+  },
+  "calibrator_parameters": {
+    "primary": {
+      "feature_order": [
+        "maximum_probability",
+        "normalized_predictive_entropy",
+        "probability_margin"
+      ],
+      "logistic_coefficient": [
+        [
+          0.1791329087766338,
+          -1.1490087927121353,
+          -0.003094246192477403
+        ]
+      ],
+      "logistic_intercept": [
+        0.9157107452655823
+      ],
+      "scaler_mean": [
+        0.853484656421308,
+        0.12821932429822572,
+        0.742639123174042
+      ],
+      "scaler_scale": [
+        0.17951476160816293,
+        0.13649482314278355,
+        0.3072254621634068
+      ]
+    },
+    "seed_11": {
+      "feature_order": [
+        "maximum_probability",
+        "normalized_predictive_entropy",
+        "probability_margin"
+      ],
+      "logistic_coefficient": [
+        [
+          -0.30731021576417894,
+          -1.0676853764358858,
+          0.36227132828413655
+        ]
+      ],
+      "logistic_intercept": [
+        1.0587156243189058
+      ],
+      "scaler_mean": [
+        0.8684347047407269,
+        0.11920841330903956,
+        0.7661906440088202
+      ],
+      "scaler_scale": [
+        0.16209826799543872,
+        0.12599977633185527,
+        0.27877740054554784
+      ]
+    },
+    "seed_22": {
+      "feature_order": [
+        "maximum_probability",
+        "normalized_predictive_entropy",
+        "probability_margin"
+      ],
+      "logistic_coefficient": [
+        [
+          -0.8436284363857104,
+          -1.4900393309378974,
+          0.5503216584589111
+        ]
+      ],
+      "logistic_intercept": [
+        0.9958858186488004
+      ],
+      "scaler_mean": [
+        0.8494560538581509,
+        0.12840375243095836,
+        0.7354238949036821
+      ],
+      "scaler_scale": [
+        0.1839541848777171,
+        0.13767341301141084,
+        0.3196566016046801
+      ]
+    },
+    "seed_33": {
+      "feature_order": [
+        "maximum_probability",
+        "normalized_predictive_entropy",
+        "probability_margin"
+      ],
+      "logistic_coefficient": [
+        [
+          -0.30582256470493685,
+          -0.8358683446863024,
+          0.7435298727059341
+        ]
+      ],
+      "logistic_intercept": [
+        1.0556609519987743
+      ],
+      "scaler_mean": [
+        0.8532322914775582,
+        0.12460438096669704,
+        0.7386165827354839
+      ],
+      "scaler_scale": [
+        0.18259068048528593,
+        0.13301685072992267,
+        0.3171621888164099
+      ]
+    },
+    "seed_44": {
+      "feature_order": [
+        "maximum_probability",
+        "normalized_predictive_entropy",
+        "probability_margin"
+      ],
+      "logistic_coefficient": [
+        [
+          -0.6076133569755003,
+          -1.5456213024969625,
+          0.09805522029051458
+        ]
+      ],
+      "logistic_intercept": [
+        1.2731940801691153
+      ],
+      "scaler_mean": [
+        0.871021347245657,
+        0.11198238236588276,
+        0.7676590229738324
+      ],
+      "scaler_scale": [
+        0.16777571736784794,
+        0.12092397225008626,
+        0.2993951523052312
+      ]
+    },
+    "seed_55": {
+      "feature_order": [
+        "maximum_probability",
+        "normalized_predictive_entropy",
+        "probability_margin"
+      ],
+      "logistic_coefficient": [
+        [
+          -0.13445980038454886,
+          -1.198269433499893,
+          0.05036986758376249
+        ]
+      ],
+      "logistic_intercept": [
+        1.19535622134995
+      ],
+      "scaler_mean": [
+        0.8551116261687505,
+        0.12654400648208175,
+        0.7482700938951473
+      ],
+      "scaler_scale": [
+        0.1786117265326652,
+        0.13567280775425358,
+        0.3031484613669617
+      ]
+    }
+  },
+  "classifier": "Cascade; saved predictions fixed",
+  "confidence_intervals": "not computed in this script",
+  "error_positive_class": "incorrect prediction",
+  "input_hashes": {
+    "corrected_experiment_outputs/final_pretest_protocol.json": "ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f",
+    "corrected_experiment_outputs/test_Cascade_arrays.npz": "c482a3900dcc7b49d3a306f44aff275fe63ec572f6ca7df0bee21a01ebaa0884",
+    "corrected_experiment_outputs/test_frozen_CRUS_acceptance_audit.csv": "64805804cf914e9ed82f8bde0d31d6fc7f04f43cd68fbb12a11044b46ca6e2e6",
+    "corrected_experiment_outputs/validation_Cascade_arrays.npz": "7f5319f7fb485624b21569cd96fb9c80e59936717598593b1a52c5ef0f639c87",
+    "supplementary_repeated_splits/seed_11/experiment_outputs/pretest_protocol.json": "ab30a5534e289dcc7435652973cdbe92b7a96137ffab90b34365324e82776952",
+    "supplementary_repeated_splits/seed_11/experiment_outputs/test_Cascade_arrays.npz": "e90d3bb437b003ee44d32b56af5d3449a30137c531f583d784633aed2de49fd6",
+    "supplementary_repeated_splits/seed_11/experiment_outputs/validation_Cascade_arrays.npz": "12eabd1a11f3850b30c0b71c37ef960e3993e925e631ce48de21b1a683affcc1",
+    "supplementary_repeated_splits/seed_22/experiment_outputs/pretest_protocol.json": "9276d795096e62e8f52252d26974326d5db4d8dd5b642980968a1298b5a6190f",
+    "supplementary_repeated_splits/seed_22/experiment_outputs/test_Cascade_arrays.npz": "1ec5ad55c8214c5f4a24f613f2844645d1ae2fc710ae77623617110334c25986",
+    "supplementary_repeated_splits/seed_22/experiment_outputs/validation_Cascade_arrays.npz": "372a2b694577b9b5c10d4a7013246eca1cbd9fe53f296e8cbd6a3286b8a55813",
+    "supplementary_repeated_splits/seed_33/experiment_outputs/pretest_protocol.json": "f863abddd10cfdaed43427ecebb0aa8dc8630266862cc11fd6c95e5c7c229171",
+    "supplementary_repeated_splits/seed_33/experiment_outputs/test_Cascade_arrays.npz": "cbf724dc7d31588f22ecbb66fc71c198871f5e265adabd41607f061e84b9d857",
+    "supplementary_repeated_splits/seed_33/experiment_outputs/validation_Cascade_arrays.npz": "b75aa3ba78287aed8535ba4828f983c4e48636ff439be4cb1466f271c01561c9",
+    "supplementary_repeated_splits/seed_44/experiment_outputs/pretest_protocol.json": "d796f8894414288aebc71514a51542322d97b3b8e3a13d90a199db543d611ad8",
+    "supplementary_repeated_splits/seed_44/experiment_outputs/test_Cascade_arrays.npz": "5afadbe27a9db71686cc5633b60cf36b493f26ae31fc51e98ece789d61112f0b",
+    "supplementary_repeated_splits/seed_44/experiment_outputs/validation_Cascade_arrays.npz": "d31a22d9efeb5ac718fe51df7eee7fc7bf8d8fa6b0e019d152ef7bb95bdb7eb6",
+    "supplementary_repeated_splits/seed_55/experiment_outputs/pretest_protocol.json": "d54b930c10303c1cb68eea1c536c985131230c47ecbc6051708444c40a463908",
+    "supplementary_repeated_splits/seed_55/experiment_outputs/test_Cascade_arrays.npz": "db8634cd426055c27b963e31731b962a77ed8c915416016cb98df2ef05f40122",
+    "supplementary_repeated_splits/seed_55/experiment_outputs/validation_Cascade_arrays.npz": "773c56db27d0dfb98c168483969018d8d8bc61fa95fcc9f0220e7152483adf7e"
+  },
+  "nominal_coverage_rounding": "ceil(fraction * N)",
+  "ranking": "uncertainty ascending; record ID ascending for ties",
+  "repeat_sd": "sample standard deviation, ddof=1"
+}

@@ -1,0 +1,104 @@
+{
+  "scope": "exploratory_additional_MTS_Dialog_testing",
+  "independent_cross_dataset_validation": false,
+  "historical_development_non_use_verified": false,
+  "overall": {
+    "records": 386,
+    "forced_correct": 245,
+    "forced_errors": 141,
+    "forced_accuracy": 0.6347150259067358,
+    "forced_macro_f1_fixed17": 0.4578296504142726,
+    "accepted_records": 162,
+    "coverage": 0.41968911917098445,
+    "accepted_correct": 141,
+    "accepted_errors": 21,
+    "selective_accuracy": 0.8703703703703703,
+    "selective_error": 0.12962962962962962,
+    "deferred_records": 224
+  },
+  "by_official_test_set": {
+    "test1": {
+      "records": 193,
+      "forced_correct": 130,
+      "forced_errors": 63,
+      "forced_accuracy": 0.6735751295336787,
+      "forced_macro_f1_fixed17": 0.4981111649971544,
+      "accepted_records": 85,
+      "coverage": 0.44041450777202074,
+      "accepted_correct": 75,
+      "accepted_errors": 10,
+      "selective_accuracy": 0.8823529411764706,
+      "selective_error": 0.11764705882352941,
+      "deferred_records": 108
+    },
+    "test2": {
+      "records": 193,
+      "forced_correct": 115,
+      "forced_errors": 78,
+      "forced_accuracy": 0.5958549222797928,
+      "forced_macro_f1_fixed17": 0.3863430960853301,
+      "accepted_records": 77,
+      "coverage": 0.39896373056994816,
+      "accepted_correct": 66,
+      "accepted_errors": 11,
+      "selective_accuracy": 0.8571428571428571,
+      "selective_error": 0.14285714285714285,
+      "deferred_records": 116
+    }
+  },
+  "class_support": {
+    "ALLERGY": 15,
+    "ASSESSMENT": 21,
+    "CC": 24,
+    "DIAGNOSIS": 3,
+    "DISPOSITION": 5,
+    "EDCOURSE": 5,
+    "EXAM": 10,
+    "FAM/SOCHX": 92,
+    "GENHX": 90,
+    "GYNHX": 2,
+    "IMAGING": 3,
+    "IMMUNIZATIONS": 2,
+    "MEDICATIONS": 19,
+    "PASTMEDICALHX": 46,
+    "PASTSURGICAL": 15,
+    "PLAN": 8,
+    "ROS": 26
+  },
+  "absent_source_classes": [],
+  "frozen_policy": {
+    "tau_c": 0.0,
+    "tau_u": 0.128165036474669,
+    "crus_weights": [
+      0.5,
+      0.3,
+      0.2
+    ]
+  },
+  "conventions": {
+    "rates": "fractions from 0 to 1",
+    "macro_f1": "fixed 17 labels; zero_division=0",
+    "aurc": "mean risk over all nonempty ranked prefixes",
+    "ranking_ties": "ascending lexicographic record_id",
+    "matched_count": "native accepted count; no tuning",
+    "ece": "15 equal-width bins; probability 1 in final bin",
+    "brier": "sum over 17 classes, then mean over records",
+    "nll": "natural log; probability floor 1e-12",
+    "confidence_intervals": "not calculated"
+  },
+  "limitations": [
+    "Additional same-dataset testing, not cross-dataset validation.",
+    "Historical development non-use remains unverified.",
+    "Automated screening does not establish full independence.",
+    "Original consultation grouping has not been established.",
+    "Historical model-file identity remains unverified.",
+    "Uncertainty comparisons are descriptive."
+  ],
+  "input_checksums": {
+    "run_manifest.json": "f9ee1bf768a4f36c04066ca2eaec403f102b092a01d924535ed13f9fd03a659c",
+    "inference_status.json": "cc81e980bc8947737cff0303585769f919b464d10064e2ed13071feb30cc87fb",
+    "predictions.jsonl": "785a90593f2025b6e3f6c3f1a38c5f0a82f0a8e688bda13d5df81ee2b4f9222a",
+    "inference_inputs.csv": "d3bac1dca3561b6b21d1ca09170f12055d0837bbb838b51aa09666b2ca0577b9",
+    "evaluation_reference.csv": "abac16061c5a2dabe79e3a442915b601a3e5d9d5c1509fb4cc72b35250fb51da"
+  }
+}

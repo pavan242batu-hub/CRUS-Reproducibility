@@ -1,0 +1,28 @@
+{
+  "additional_candidate": "equal weighting",
+  "confidence_candidates_include_zero": true,
+  "confidence_quantile_points": 21,
+  "data_used": "validation arrays only; no test arrays loaded",
+  "gate_objective": "maximize accuracy; maximize coverage; smaller tau_c; smaller tau_u",
+  "grid_step": 0.1,
+  "input_hashes": {
+    "corrected_experiment_outputs/final_pretest_protocol.json": "ab7139125cf6b1a46c0ffaef838316fdda920a45f03c4979d4c8c5902bdeae1f",
+    "corrected_experiment_outputs/validation_Cascade_arrays.npz": "7f5319f7fb485624b21569cd96fb9c80e59936717598593b1a52c5ef0f639c87",
+    "supplementary_repeated_splits/seed_11/experiment_outputs/pretest_protocol.json": "ab30a5534e289dcc7435652973cdbe92b7a96137ffab90b34365324e82776952",
+    "supplementary_repeated_splits/seed_11/experiment_outputs/validation_Cascade_arrays.npz": "12eabd1a11f3850b30c0b71c37ef960e3993e925e631ce48de21b1a683affcc1",
+    "supplementary_repeated_splits/seed_22/experiment_outputs/pretest_protocol.json": "9276d795096e62e8f52252d26974326d5db4d8dd5b642980968a1298b5a6190f",
+    "supplementary_repeated_splits/seed_22/experiment_outputs/validation_Cascade_arrays.npz": "372a2b694577b9b5c10d4a7013246eca1cbd9fe53f296e8cbd6a3286b8a55813",
+    "supplementary_repeated_splits/seed_33/experiment_outputs/pretest_protocol.json": "f863abddd10cfdaed43427ecebb0aa8dc8630266862cc11fd6c95e5c7c229171",
+    "supplementary_repeated_splits/seed_33/experiment_outputs/validation_Cascade_arrays.npz": "b75aa3ba78287aed8535ba4828f983c4e48636ff439be4cb1466f271c01561c9",
+    "supplementary_repeated_splits/seed_44/experiment_outputs/pretest_protocol.json": "d796f8894414288aebc71514a51542322d97b3b8e3a13d90a199db543d611ad8",
+    "supplementary_repeated_splits/seed_44/experiment_outputs/validation_Cascade_arrays.npz": "d31a22d9efeb5ac718fe51df7eee7fc7bf8d8fa6b0e019d152ef7bb95bdb7eb6",
+    "supplementary_repeated_splits/seed_55/experiment_outputs/pretest_protocol.json": "d54b930c10303c1cb68eea1c536c985131230c47ecbc6051708444c40a463908",
+    "supplementary_repeated_splits/seed_55/experiment_outputs/validation_Cascade_arrays.npz": "773c56db27d0dfb98c168483969018d8d8bc61fa95fcc9f0220e7152483adf7e"
+  },
+  "minimum_validation_coverage": 0.5,
+  "quantile_method": "linear",
+  "selection_status": "revision-stage validation selection; not part of the original pretest protocol",
+  "simplex_grid_candidates": 66,
+  "uncertainty_quantile_points": 101,
+  "weight_ties": "accuracy; coverage; L1 proximity to original weights; lexicographic weights"
+}

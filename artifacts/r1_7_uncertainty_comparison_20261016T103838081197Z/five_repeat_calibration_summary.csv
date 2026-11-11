@@ -1,0 +1,3 @@
+confidence_method,correctness_Brier_mean,correctness_Brier_std,correctness_ECE_10_equal_width_mean,correctness_ECE_10_equal_width_std
+CalibratedCorrectness,0.15407611933025525,0.007873657003917785,0.06625273699299665,0.01998825572804241
+MaximumProbability,0.1868415353733608,0.018444252946116967,0.16624006792099202,0.030446295753505728

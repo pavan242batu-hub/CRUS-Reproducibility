@@ -1,0 +1,9 @@
+,realized_word_edit_rate,realized_word_edit_rate,realized_word_edit_rate,realized_turn_removal_rate,realized_turn_removal_rate,realized_turn_removal_rate
+,mean,min,max,mean,min,max
+condition,,,,,,
+spelling_05,0.07576400672467908,0.03571428571428571,0.5,,,
+spelling_10,0.11484717020190696,0.07142857142857142,0.5,,,
+turn_removal_10,,,,0.19306241601001542,0.07142857142857142,0.5
+turn_removal_25,,,,0.29156247894796883,0.2,0.5
+prefix_75,,,,0.3099361263530132,0.25,0.5
+prefix_50,,,,0.5219803811071153,0.5,0.6666666666666666
