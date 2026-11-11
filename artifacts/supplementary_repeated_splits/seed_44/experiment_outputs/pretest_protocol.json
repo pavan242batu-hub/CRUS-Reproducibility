@@ -1,0 +1,177 @@
+{
+  "baseline_configuration": {
+    "calibration_ensemble": true,
+    "calibration_method": "sigmoid",
+    "lr_C": 1.0,
+    "lr_max_iter": 2000,
+    "max_features": 18000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "seed": 42,
+    "sublinear_tf": true,
+    "svm_C": 1.0,
+    "svm_max_iter": 3000
+  },
+  "calibration_manifest_sha256": "d2436f4797428c119cd9bc272f136a09e3bf0c780290285fb45675e04b6fc86c",
+  "classes": [
+    "ALLERGY",
+    "ASSESSMENT",
+    "CC",
+    "DIAGNOSIS",
+    "DISPOSITION",
+    "EDCOURSE",
+    "EXAM",
+    "FAM/SOCHX",
+    "GENHX",
+    "GYNHX",
+    "IMAGING",
+    "IMMUNIZATIONS",
+    "MEDICATIONS",
+    "PASTMEDICALHX",
+    "PASTSURGICAL",
+    "PLAN",
+    "ROS"
+  ],
+  "executed_cell_source_hashes": {
+    "62": "56067463dcead49987856dd32a8470debbbb72f20917c23a284393958f7ab990",
+    "63": "bfae57c149c341c948ec844c2518a15e93816d9d759de59ebaf11cb14daf60f4",
+    "67": "7a3d3ff4c3d4f53822a144784f65cb08a8f47cc0033f348f96e6af2963ba2270",
+    "68": "fa100a1ba68ba512c204c576c3e4d7213ec070155751fa7d7b4cae6f9653656b",
+    "69": "29caf28d0225e616c84a6a5f1361a5b00f2948742fce44484783d9730236c169",
+    "70": "a426bdd105c07d1bdb995a91dc0a4acad947157dc29048f89a8f9c21b17d99da",
+    "71": "b2344831f508adb751fe6a0080aed707c6660420d0e8637ca4814c2bee57a244",
+    "72": "384461b94b90d151a966309d8601d7a851adfd660bb6c5256666cdf0c8707aa1",
+    "73": "cc9c9124363a14172af35a32a66cc429bcae7820ae59a0d3c252789c4af711e5",
+    "74": "86fb2de87d1036d5e0a71bebc4e46d672cfc460cb8c853a9779792ec50d32507",
+    "75": "2b95a6bce19d3e965851a3d3c207562148b2a2c9d53e785df231223d63f9b8c8",
+    "79": "8b00c09cb64c4c20d7ba3d26e731f137e97e29e750efea15a25b17a20d2d6973",
+    "94": "4ce4981cc3d24b7f09d66a34a51afa70ca23980a1f9178ae0db35a24389d4aad"
+  },
+  "frozen_policies": {
+    "Cascade:CRUS": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 123,
+      "n_validation": 258,
+      "selective_accuracy": 0.9534883720930233,
+      "tau_c": 0.9306479108683098,
+      "tau_u": 0.1362795698267574
+    },
+    "Cascade:H_pred": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 121,
+      "n_validation": 258,
+      "selective_accuracy": 0.937984496124031,
+      "tau_c": 0.0,
+      "tau_u": 0.06895984948367762
+    },
+    "Cascade:H_retrieval": {
+      "coverage": 0.5077519379844961,
+      "n_accepted": 131,
+      "n_correct_accepted": 125,
+      "n_validation": 258,
+      "selective_accuracy": 0.9541984732824428,
+      "tau_c": 0.9306479108683098,
+      "tau_u": 0.335403806150639
+    },
+    "Cascade:OneMinusMargin": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 120,
+      "n_validation": 258,
+      "selective_accuracy": 0.9302325581395349,
+      "tau_c": 0.9530975274764057,
+      "tau_u": 0.09494920240942362
+    },
+    "Cascade:OneMinusMaxProb": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 120,
+      "n_validation": 258,
+      "selective_accuracy": 0.9302325581395349,
+      "tau_c": 0.0,
+      "tau_u": 0.04690247252359431
+    },
+    "Cascade:V_RRF": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 120,
+      "n_validation": 258,
+      "selective_accuracy": 0.9302325581395349,
+      "tau_c": 0.9530975274764057,
+      "tau_u": 0.06036059748649804
+    },
+    "LengthNormLegacy:CRUS": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 124,
+      "n_validation": 258,
+      "selective_accuracy": 0.9612403100775194,
+      "tau_c": 0.0,
+      "tau_u": 0.10393152057270254
+    },
+    "SingleStageFull:CRUS": {
+      "coverage": 0.5116279069767442,
+      "n_accepted": 132,
+      "n_correct_accepted": 123,
+      "n_validation": 258,
+      "selective_accuracy": 0.9318181818181818,
+      "tau_c": 0.0,
+      "tau_u": 0.13471670881945022
+    },
+    "SingleStageTruncated:CRUS": {
+      "coverage": 0.5,
+      "n_accepted": 129,
+      "n_correct_accepted": 126,
+      "n_validation": 258,
+      "selective_accuracy": 0.9767441860465116,
+      "tau_c": 0.9299516002787862,
+      "tau_u": 0.21048924698877974
+    }
+  },
+  "input": "normalized dialogue only",
+  "model_seed": 42,
+  "notebook_sha256": "ecd80147a6037de9063ee36c391c862000f63be659ad6ca3874e09d83d5b3330",
+  "policy_selection_configuration": {
+    "confidence_quantile_points": 21,
+    "minimum_validation_coverage": 0.5,
+    "selection_rule": "maximize validation selective accuracy; then maximize coverage; then smaller tau_c; then smaller tau_u",
+    "uncertainty_quantile_points": 101
+  },
+  "retrieval_configuration": {
+    "batch_size": 16,
+    "bm25_b": 0.75,
+    "bm25_k1": 1.5,
+    "cascade_top_k_classes": 5,
+    "ce_max_tokens": 512,
+    "ce_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "doc_truncate_chars": 400,
+    "length_norm_alpha": 0.5,
+    "rrf_k": 60,
+    "rrf_top_n": 10,
+    "seed": 42,
+    "topk_retrieve": 20
+  },
+  "split_manifest_sha256": "17036221c0b860b81160f41364611d07c141ea52c2fd36570c99efa3ae185d00",
+  "split_seed": 44,
+  "split_sizes": {
+    "test": 257,
+    "train": 773,
+    "validation": 258
+  },
+  "uncertainty_configuration": {
+    "variance_ddof": 0,
+    "variance_epsilon": 1e-10,
+    "variance_stage": "final document set used for CE aggregation",
+    "weight_policy": "fixed heuristic; not optimized",
+    "weights": [
+      0.5,
+      0.3,
+      0.2
+    ]
+  }
+}
